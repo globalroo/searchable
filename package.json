@@ -11,7 +11,7 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"codecov": "yarn test && codecov",
+		"codecov": "yarn test --coverage && codecov",
 		"eject": "react-scripts eject"
 	},
 	"husky": {
