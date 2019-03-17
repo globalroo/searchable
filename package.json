@@ -4,6 +4,7 @@
 	"private": false,
 	"dependencies": {
 		"@reach/router": "1.2.1",
+		"downshift": "3.2.7",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
 		"react-scripts": "2.1.8",

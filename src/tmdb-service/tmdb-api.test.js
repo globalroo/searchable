@@ -7,6 +7,7 @@ import {
 	getPopularMovies,
 	getRecommendedMoviesById,
 	getSearchMovieTitleResults,
+	getSearchMultiResults,
 	getTvById,
 	getWeeklyTrendingMovies,
 	safeFetchJson
@@ -84,6 +85,14 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(
 				`"https://api.themoviedb.org/3/search/movie?api_key=test-key&query=Robocop"`
+			);
+		});
+		it("getSearchMultiResults calls out to the correct endpoint", async () => {
+			await getSearchMultiResults(testMovie);
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/search/multi?api_key=test-key&query=Robocop"`
 			);
 		});
 		it("getMovieById calls out to the correct endpoint", async () => {

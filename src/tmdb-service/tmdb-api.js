@@ -1,14 +1,21 @@
 import {
-	getPopularMovieEndpoint,
-	getSearchMovieEndpoint,
 	getMovieByIdEndpoint,
-	getPersonByIdEndpoint,
 	getMovieCastByIdEndpoint,
+	getPersonByIdEndpoint,
+	getPopularMovieEndpoint,
 	getRecommendedMoviesByIdEndpoint,
+	getSearchMovieEndpoint,
+	getSearchMultiEndpoint,
 	getTrendingMoviesByDay,
 	getTrendingMoviesByWeek,
 	getTvByIdEndpoint
 } from "./tmdb-config";
+
+export const MEDIA_TYPE = {
+	TV: "tv",
+	MOVIE: "movie",
+	PERSON: "person"
+};
 
 export const defaultFailResponse = {
 	page: 0,
@@ -54,6 +61,11 @@ export const getPopularMovies = async () =>
 export const getSearchMovieTitleResults = async term =>
 	await safeFetchJson({
 		url: getSearchMovieEndpoint(term)
+	});
+
+export const getSearchMultiResults = async term =>
+	await safeFetchJson({
+		url: getSearchMultiEndpoint(term)
 	});
 
 export const getMovieById = async id =>

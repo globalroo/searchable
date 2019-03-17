@@ -13,6 +13,7 @@ export const API = {
 	POPULAR_MOVIES: "/movie/popular",
 	RECOMMENDATIONS: "/recommendations",
 	SEARCH_MOVIES: "/search/movie",
+	SEARCH_MULTI: "/search/multi",
 	SMALL_IMG_WIDTH: "/w300",
 	TRENDING: "/trending",
 	TV: "/tv",
@@ -28,6 +29,7 @@ export const getMovieCastByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE
 export const getPopularMovieEndpoint = () => getAuthorisedEndpoint(API.POPULAR_MOVIES);
 export const getRecommendedMoviesByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);
 export const getSearchMovieEndpoint = searchTerm => `${getAuthorisedEndpoint(API.SEARCH_MOVIES)}&query=${searchTerm}`;
+export const getSearchMultiEndpoint = searchTerm => `${getAuthorisedEndpoint(API.SEARCH_MULTI)}&query=${searchTerm}`;
 export const getTrendingMoviesByDay = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.DAY}`);
 export const getTrendingMoviesByWeek = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
 
