@@ -15,6 +15,7 @@ export const API = {
 	SEARCH_MOVIES: "/search/movie",
 	SMALL_IMG_WIDTH: "/w300",
 	TRENDING: "/trending",
+	TV: "/tv",
 	WEEK: "/week"
 };
 
@@ -25,7 +26,7 @@ export const getSmallPosterImage = imagePath => `${BASE_IMG_PATH}${API.SMALL_IMG
 export const getMovieByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}`);
 export const getMovieCastByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.CREDITS}`);
 export const getPopularMovieEndpoint = () => getAuthorisedEndpoint(API.POPULAR_MOVIES);
-export const getRelatedMoviesByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);
+export const getRecommendedMoviesByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);
 export const getSearchMovieEndpoint = searchTerm => `${getAuthorisedEndpoint(API.SEARCH_MOVIES)}&query=${searchTerm}`;
 export const getTrendingMoviesByDay = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.DAY}`);
 export const getTrendingMoviesByWeek = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
@@ -33,6 +34,5 @@ export const getTrendingMoviesByWeek = () => getAuthorisedEndpoint(`${API.TRENDI
 //PERSON
 export const getPersonByIdEndpoint = id => getAuthorisedEndpoint(`${API.PERSON}/${id}`);
 
-// Trending today / week
-//"https://api.themoviedb.org/3/trending/all/day?api_key=785929e86aa524cbb4256e03c42c731f"
-//"https://api.themoviedb.org/3/trending/all/week?api_key=785929e86aa524cbb4256e03c42c731f"
+//TV
+export const getTvByIdEndpoint = id => getAuthorisedEndpoint(`${API.TV}/${id}`);

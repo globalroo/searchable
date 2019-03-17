@@ -1,14 +1,15 @@
 import {
-	safeFetchJson,
 	defaultFailResponse,
-	getPopularMovies,
-	getSearchMovieTitleResults,
+	getDailyTrendingMovies,
 	getMovieById,
-	getRelatedMoviesById,
 	getMovieCastById,
 	getPersonById,
-	getDailyTrendingMovies,
-	getWeeklyTrendingMovies
+	getPopularMovies,
+	getRecommendedMoviesById,
+	getSearchMovieTitleResults,
+	getTvById,
+	getWeeklyTrendingMovies,
+	safeFetchJson
 } from "./tmdb-api";
 
 jest.mock("./tmdb-key", () => ({
@@ -55,12 +56,17 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			expect(response.ok).toBe(false);
 			expect(payload).toEqual(defaultFailResponse);
 		});
-
 		it("safeFetchJson retrieves and formats a successful response that throws on JSON parse error", async () => {
 			mockFetch.mockResponseOnce(undefined, { status: 200 });
 			const { payload, response } = await safeFetchJson({ url: testURL });
 			expect(response.ok).toBe(false);
 			expect(response.statusText).toContain("Unexpected end of JSON input");
+			expect(payload).toEqual(defaultFailResponse);
+		});
+		it("safeFetchJson retrieves and formats an UNsuccessful response to the server", async () => {
+			mockFetch.mockResponseOnce(undefined, { status: 404, statusText: "Not found", ok: false });
+			const { payload, response } = await safeFetchJson({ url: testURL });
+			expect(response.ok).toBe(false);
 			expect(payload).toEqual(defaultFailResponse);
 		});
 	});
@@ -93,9 +99,9 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(`"https://api.themoviedb.org/3/movie/popular?api_key=test-key"`);
 		});
-		it("getRelatedMoviesById, calls out to the correct endpoint", async () => {
+		it("getRecommendedMoviesById, calls out to the correct endpoint", async () => {
 			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
-			await getRelatedMoviesById(1);
+			await getRecommendedMoviesById(1);
 			const [request] = mockFetch.mock.calls;
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(
@@ -129,6 +135,13 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [request] = mockFetch.mock.calls;
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(`"https://api.themoviedb.org/3/trending/movie/week?api_key=test-key"`);
+		});
+		it("getTvById, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getTvById(1);
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(`"https://api.themoviedb.org/3/tv/1?api_key=test-key"`);
 		});
 	});
 

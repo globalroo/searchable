@@ -1,4 +1,4 @@
-let API_KEY = "785929e86aa524cbb4256e03c42c731f";
+let API_KEY = ""; //TODO: handle API key
 
 export const getKey = () => {
 	return API_KEY;

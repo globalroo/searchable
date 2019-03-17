@@ -4,9 +4,10 @@ import {
 	getMovieByIdEndpoint,
 	getPersonByIdEndpoint,
 	getMovieCastByIdEndpoint,
-	getRelatedMoviesByIdEndpoint,
+	getRecommendedMoviesByIdEndpoint,
 	getTrendingMoviesByDay,
-	getTrendingMoviesByWeek
+	getTrendingMoviesByWeek,
+	getTvByIdEndpoint
 } from "./tmdb-config";
 
 export const defaultFailResponse = {
@@ -37,7 +38,7 @@ export const safeFetchJson = async ({ url, options = {}, failResponse = defaultF
 		response = await window.fetch(url, options);
 		payload = await response.json();
 	} catch (error) {
-		response = { ok: false, statusText: `Something went wrong: ${error}` };
+		response = { ok: false, statusText: `${error}` };
 		payload = failResponse;
 	}
 	return handleResponse({ response, payload });
@@ -57,12 +58,13 @@ export const getSearchMovieTitleResults = async term =>
 
 export const getMovieById = async id =>
 	await safeFetchJson({
-		url: getMovieByIdEndpoint(id)
+		url: getMovieByIdEndpoint(id),
+		failResponse: {}
 	});
 
-export const getRelatedMoviesById = async id =>
+export const getRecommendedMoviesById = async id =>
 	await safeFetchJson({
-		url: getRelatedMoviesByIdEndpoint(id)
+		url: getRecommendedMoviesByIdEndpoint(id)
 	});
 
 export const getMovieCastById = async id =>
@@ -72,7 +74,14 @@ export const getMovieCastById = async id =>
 
 export const getPersonById = async id =>
 	await safeFetchJson({
-		url: getPersonByIdEndpoint(id)
+		url: getPersonByIdEndpoint(id),
+		failResponse: {}
+	});
+
+export const getTvById = async id =>
+	await safeFetchJson({
+		url: getTvByIdEndpoint(id),
+		failResponse: {}
 	});
 
 export const getDailyTrendingMovies = async () =>
@@ -84,3 +93,7 @@ export const getWeeklyTrendingMovies = async () =>
 	await safeFetchJson({
 		url: getTrendingMoviesByWeek()
 	});
+
+//keywords
+//search multiples
+//adjust_response

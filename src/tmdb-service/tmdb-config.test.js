@@ -7,11 +7,12 @@ import {
 	getMovieCastByIdEndpoint,
 	getPersonByIdEndpoint,
 	getPopularMovieEndpoint,
-	getRelatedMoviesByIdEndpoint,
+	getRecommendedMoviesByIdEndpoint,
 	getSearchMovieEndpoint,
 	getSmallPosterImage,
 	getTrendingMoviesByDay,
-	getTrendingMoviesByWeek
+	getTrendingMoviesByWeek,
+	getTvByIdEndpoint
 } from "./tmdb-config";
 
 jest.mock("./tmdb-key", () => ({
@@ -35,12 +36,16 @@ describe("Verify endpoints", () => {
 		const testId = "1";
 		expect(getPersonByIdEndpoint(1)).toContain(`${BASE_URL}${API.PERSON}/${testId}`);
 	});
+	it("Verify getPersonByIdEndpoint returns expected URL", () => {
+		const testId = "1";
+		expect(getTvByIdEndpoint(1)).toContain(`${BASE_URL}${API.TV}/${testId}`);
+	});
 	it("Verify getPopularMovieEndpoint returns expected URL", () => {
 		expect(getPopularMovieEndpoint()).toContain(`${BASE_URL}${API.POPULAR_MOVIES}`);
 	});
 	it("Verify getRelatedMoviesByIdEndpoint returns expected URL", () => {
 		const testId = "1";
-		expect(getRelatedMoviesByIdEndpoint(testId)).toContain(
+		expect(getRecommendedMoviesByIdEndpoint(testId)).toContain(
 			`${BASE_URL}${API.MOVIE}/${testId}${API.RECOMMENDATIONS}`
 		);
 	});
