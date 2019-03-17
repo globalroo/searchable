@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Downshift from "downshift";
 import { navigate } from "@reach/router";
 import { Footer } from "src/components/footer";
 import { getSearchMultiResults, MEDIA_TYPE } from "src/tmdb-service/tmdb-api.js";
+import { useDebounce } from "use-debounce";
 
 export const SearchItem = ({ item, index, highlighted, selected, ...downshiftProps }) => (
 	<div
@@ -34,19 +35,30 @@ const navigateTo = selection => {
 	console.log(`Route to this asset ${JSON.stringify(selection)}`);
 };
 
+const DEBOUNCE_TIME = 350; //ms
+
 export const SearchForm = () => {
 	const [results, setResults] = useState([]);
+
 	const [localValue, setLocalValue] = useState("");
+	const [debouncedSearchValue] = useDebounce(localValue, DEBOUNCE_TIME);
+
+	useEffect(() => {
+		if (debouncedSearchValue.length === 0) {
+			setResults([]);
+			return;
+		} else if (debouncedSearchValue.length < 3) {
+			return;
+		}
+
+		getSearchMultiResults(debouncedSearchValue).then(({ payload }) => {
+			setResults(() => payload.results);
+		});
+	}, [debouncedSearchValue]);
+
 	const searchValue = ({ target }) => {
 		const { value = "" } = target;
 		setLocalValue(value);
-
-		if (value.length < 3) {
-			return;
-		}
-		getSearchMultiResults(value).then(({ payload }) => {
-			setResults(() => payload.results);
-		});
 	};
 
 	return (
