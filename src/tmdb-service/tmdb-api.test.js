@@ -99,7 +99,9 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			await getMovieById(1);
 			const [request] = mockFetch.mock.calls;
 			const [url] = request;
-			expect(url).toMatchInlineSnapshot(`"https://api.themoviedb.org/3/movie/1?api_key=test-key"`);
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/movie/1?api_key=test-key&append_to_response=recommendations,credits"`
+			);
 		});
 		it("getPopularMovies calls out to the correct endpoint", async () => {
 			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));

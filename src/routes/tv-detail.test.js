@@ -179,12 +179,12 @@ const mockTv = {
 };
 
 jest.mock("src/hooks/by-id-loader", () => ({
-	useByIdLoader: () => [mockTv]
+	useByIdLoader: () => ({ response: mockTv })
 }));
 
 describe("TV Detail tests", () => {
-	it("Renders a TV detail component", () => {
-		const { container } = render(<TvDetail id={mockTv.id} />);
+	it("Renders a TV detail component", async () => {
+		const { container } = await render(<TvDetail id={mockTv.id} />);
 		expect(container.firstChild).toMatchSnapshot();
 	});
 });

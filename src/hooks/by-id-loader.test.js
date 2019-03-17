@@ -10,8 +10,8 @@ const mockLoadedData = {
 
 // Exercise the hook by ensuring a Fake component is populated as expected
 export const HookTestingComponent = ({ id, fetcher }) => {
-	const [detail] = useByIdLoader({ id, fetcher });
-	return <div>{JSON.stringify(detail)}</div>;
+	const { loading, error, response } = useByIdLoader({ id, fetcher });
+	return <div>{JSON.stringify(response)}</div>;
 };
 
 describe("byIdLoader hook", () => {
@@ -29,7 +29,7 @@ describe("byIdLoader hook", () => {
 	});
 
 	it("Uses the loading hook correctly", async () => {
-		const fetcher = jest.fn(() => Promise.resolve(mockLoadedData));
+		const fetcher = jest.fn(() => Promise.resolve({ response: { payload: mockLoadedData } }));
 		const { container } = await render(<HookTestingComponent id={1} fetcher={fetcher} />);
 		expect(container.firstChild).toMatchSnapshot();
 	});

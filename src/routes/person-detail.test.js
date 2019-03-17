@@ -31,12 +31,12 @@ const mockPerson = {
 };
 
 jest.mock("src/hooks/by-id-loader", () => ({
-	useByIdLoader: () => [mockPerson]
+	useByIdLoader: () => ({ response: mockPerson })
 }));
 
 describe("Person Detail tests", () => {
-	it("Renders a Person detail component", () => {
-		const { container } = render(<PersonDetail id={mockPerson.id} />);
+	it("Renders a Person detail component", async () => {
+		const { container } = await render(<PersonDetail id={mockPerson.id} />);
 		expect(container.firstChild).toMatchSnapshot();
 	});
 });

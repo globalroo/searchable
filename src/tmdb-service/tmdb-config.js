@@ -24,7 +24,8 @@ export const getAuthorisedEndpoint = endpoint => `${BASE_URL}${endpoint}?api_key
 export const getSmallPosterImage = imagePath => `${BASE_IMG_PATH}${API.SMALL_IMG_WIDTH}/${imagePath}`;
 
 //MOVIE
-export const getMovieByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}`);
+export const getMovieByIdEndpoint = id =>
+	getAuthorisedEndpoint(`${API.MOVIE}/${id}`) + "&append_to_response=recommendations,credits";
 export const getMovieCastByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.CREDITS}`);
 export const getPopularMovieEndpoint = () => getAuthorisedEndpoint(API.POPULAR_MOVIES);
 export const getRecommendedMoviesByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);

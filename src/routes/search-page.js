@@ -4,18 +4,22 @@ import { navigate } from "@reach/router";
 import { Footer } from "src/components/footer";
 import { getSearchMultiResults, MEDIA_TYPE } from "src/tmdb-service/tmdb-api.js";
 import { useDebounce } from "use-debounce";
+import { TextField } from "@material-ui/core";
+import { SearchItem } from "src/components/search-item";
+import { Paper } from "@material-ui/core";
 
-export const SearchItem = ({ item, index, highlighted, selected, ...downshiftProps }) => (
-	<div
-		className="dropdown-item"
-		{...downshiftProps}
-		style={{
-			backgroundColor: highlighted ? "lightgray" : "white"
-		}}
-	>
-		{`${item.media_type}${item.title || item.name}`}
-	</div>
-);
+const classes = {
+	container: {
+		display: "flex",
+		flexWrap: "wrap",
+		width: 600
+	},
+	menu: {
+		width: 200
+	}
+};
+
+const DEBOUNCE_TIME = 350; //ms
 
 const navigateTo = selection => {
 	const { media_type } = selection;
@@ -35,25 +39,19 @@ const navigateTo = selection => {
 	console.log(`Route to this asset ${JSON.stringify(selection)}`);
 };
 
-const DEBOUNCE_TIME = 350; //ms
-
 export const SearchForm = () => {
 	const [results, setResults] = useState([]);
-
 	const [localValue, setLocalValue] = useState("");
 	const [debouncedSearchValue] = useDebounce(localValue, DEBOUNCE_TIME);
 
 	useEffect(() => {
 		if (debouncedSearchValue.length === 0) {
 			setResults([]);
-			return;
-		} else if (debouncedSearchValue.length < 3) {
-			return;
+		} else if (debouncedSearchValue.length >= 3) {
+			getSearchMultiResults(debouncedSearchValue).then(({ payload }) => {
+				setResults(() => payload.results);
+			});
 		}
-
-		getSearchMultiResults(debouncedSearchValue).then(({ payload }) => {
-			setResults(() => payload.results);
-		});
 	}, [debouncedSearchValue]);
 
 	const searchValue = ({ target }) => {
@@ -65,15 +63,22 @@ export const SearchForm = () => {
 		<Downshift inputValue={localValue} onChange={navigateTo} itemToString={item => (item ? item.title : "")}>
 			{({ getInputProps, getItemProps, highlightedIndex, isOpen, inputValue }) => (
 				<div>
-					<input
-						{...getInputProps({
-							placeholder: "Multi-search",
-							onChange: searchValue,
-							value: inputValue
-						})}
-					/>
+					<form className={classes.container} noValidate autoComplete="off">
+						<TextField
+							id="outlined-search"
+							label="Search for Movie, TV show or Actor"
+							type="search"
+							margin="normal"
+							fullWidth
+							{...getInputProps({
+								onChange: searchValue,
+								value: inputValue
+							})}
+						/>
+					</form>
+
 					{isOpen ? (
-						<>
+						<Paper className={classes.paper} square>
 							{results.map((item, index) => {
 								const highlighted = highlightedIndex === index;
 								return (
@@ -89,7 +94,7 @@ export const SearchForm = () => {
 									/>
 								);
 							})}
-						</>
+						</Paper>
 					) : null}
 				</div>
 			)}
