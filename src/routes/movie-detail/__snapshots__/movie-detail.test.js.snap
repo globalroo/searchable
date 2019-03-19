@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie Detail tests Renders a movie detail component 1`] = `
+<div
+  class="wrapper"
+>
+  <aside
+    class="sidebar"
+  >
+    <img
+      alt="Tammy"
+      src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+    />
+  </aside>
+  <article
+    class="content"
+  >
+    <h1
+      class="bold-header-uppercase"
+    >
+      Tammy
+    </h1>
+    <h1>
+      She hit the road. The road hit back.
+    </h1>
+    <div
+      class="content-row-1"
+    >
+      <p
+        class="MuiTypography-root-1 MuiTypography-body1-10"
+      >
+        After losing her job and learning that her husband has been unfaithful, a woman hits the road with her profane, hard-drinking grandmother.
+      </p>
+    </div>
+    <hr
+      class="MuiDivider-root-37"
+    />
+    <div
+      class="content-row-2"
+    >
+      <ul
+        class="MuiGridList-root-45 ImageAvatars-gridList-44"
+        style="margin: -2px;"
+      >
+        <div
+          class="[object Object]"
+          style="width: 50%; height: 184px; padding: 2px;"
+        >
+          <a
+            href="/person/55536"
+          >
+            <div
+              class="MuiAvatar-root-46 ImageAvatars-avatar-42"
+            >
+              <img
+                alt="Melissa McCarthy"
+                class="MuiAvatar-img-48"
+                src="http://image.tmdb.org/t/p/w300//nRNMJlqR33j84cGdB0RxstV3NYm.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-1 MuiTypography-body1-10 MuiTypography-alignCenter-24"
+          >
+            Melissa McCarthy
+          </p>
+          <span
+            class="MuiTypography-root-1 MuiTypography-caption-11 MuiTypography-alignCenter-24"
+          >
+            Tammy
+          </span>
+        </div>
+      </ul>
+    </div>
+    <hr
+      class="MuiDivider-root-37"
+    />
+  </article>
+  <footer
+    class="footer"
+  >
+    <h1>
+      Recommendations
+    </h1>
+    <div
+      class="SingleLineGridList-root-49"
+    >
+      <ul
+        class="MuiGridList-root-45 SingleLineGridList-gridList-50"
+        style="margin: -2px;"
+      >
+        <a
+          href="/movie/136795"
+          style="width: 40%; height: 184px; padding: 2px;"
+        >
+          <li
+            class="MuiGridListTile-root-53"
+          >
+            <div
+              class="MuiGridListTile-tile-54"
+            >
+              <img
+                alt="The Heat"
+                src="http://image.tmdb.org/t/p/w300//2wKw8M6g7wj0RNz9zAeqU9s1BKl.jpg"
+              />
+              <div
+                class="MuiGridListTileBar-root-57 MuiGridListTileBar-titlePositionBottom-58"
+              >
+                <div
+                  class="MuiGridListTileBar-titleWrap-61 MuiGridListTileBar-titleWrapActionPosRight-63"
+                >
+                  <div
+                    class="MuiGridListTileBar-title-64"
+                  >
+                    The Heat
+                  </div>
+                </div>
+                <div
+                  class="MuiGridListTileBar-actionIcon-66"
+                >
+                  <button
+                    class="MuiButtonBase-root-74 MuiIconButton-root-68"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label-73"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root-77 SingleLineGridList-title-51"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root-86"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </footer>
+</div>
+`;

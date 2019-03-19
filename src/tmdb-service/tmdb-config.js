@@ -21,21 +21,22 @@ export const API = {
 };
 
 export const getAuthorisedEndpoint = endpoint => `${BASE_URL}${endpoint}?api_key=${API_KEY}`;
-export const getSmallPosterImage = imagePath => `${BASE_IMG_PATH}${API.SMALL_IMG_WIDTH}/${imagePath}`;
-
-//MOVIE
+export const getSmallPosterImage = imagePath =>
+	`${BASE_IMG_PATH}${API.SMALL_IMG_WIDTH}/${imagePath}`;
 export const getMovieByIdEndpoint = id =>
 	getAuthorisedEndpoint(`${API.MOVIE}/${id}`) + "&append_to_response=recommendations,credits";
-export const getMovieCastByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.CREDITS}`);
+export const getMovieCastByIdEndpoint = id =>
+	getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.CREDITS}`);
 export const getPopularMovieEndpoint = () => getAuthorisedEndpoint(API.POPULAR_MOVIES);
-export const getRecommendedMoviesByIdEndpoint = id => getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);
-export const getSearchMovieEndpoint = searchTerm => `${getAuthorisedEndpoint(API.SEARCH_MOVIES)}&query=${searchTerm}`;
-export const getSearchMultiEndpoint = searchTerm => `${getAuthorisedEndpoint(API.SEARCH_MULTI)}&query=${searchTerm}`;
-export const getTrendingMoviesByDay = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.DAY}`);
-export const getTrendingMoviesByWeek = () => getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
-
-//PERSON
+export const getRecommendedMoviesByIdEndpoint = id =>
+	getAuthorisedEndpoint(`${API.MOVIE}/${id}${API.RECOMMENDATIONS}`);
+export const getSearchMovieEndpoint = searchTerm =>
+	`${getAuthorisedEndpoint(API.SEARCH_MOVIES)}&query=${searchTerm}`;
+export const getSearchMultiEndpoint = searchTerm =>
+	`${getAuthorisedEndpoint(API.SEARCH_MULTI)}&query=${searchTerm}`;
+export const getTrendingMoviesByDay = () =>
+	getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.DAY}`);
+export const getTrendingMoviesByWeek = () =>
+	getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
 export const getPersonByIdEndpoint = id => getAuthorisedEndpoint(`${API.PERSON}/${id}`);
-
-//TV
 export const getTvByIdEndpoint = id => getAuthorisedEndpoint(`${API.TV}/${id}`);

@@ -6,7 +6,7 @@ import { getSmallPosterImage } from "../tmdb-service/tmdb-config";
 import { Link } from "@reach/router";
 
 const styles = {
-	bigAvatar: {
+	avatar: {
 		margin: 10,
 		width: 80,
 		height: 80
@@ -17,7 +17,6 @@ const styles = {
 	},
 	gridList: {
 		flexWrap: "nowrap",
-		// Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
 		transform: "translateZ(0)"
 	}
 };
@@ -32,7 +31,7 @@ function ImageAvatars(props) {
 						<Avatar
 							alt={member.name}
 							src={getSmallPosterImage(member.profile_path)}
-							className={classes.bigAvatar}
+							className={classes.avatar}
 						/>
 					</Link>
 					<Typography align="center">{member.name}</Typography>

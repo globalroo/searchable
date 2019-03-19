@@ -1,13 +1,9 @@
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-body {
-	background-color: #fff;
-	color: #444;
-}
+/* CSS Grid styling via https://gridbyexample.com/patterns/ - Rachel Andrew @rachelandrew */
+
 h1, p {
 	margin: 0 0 1em 0;
 }
+
 .wrapper {
 	max-width: 940px;
 	margin: 0 30px;

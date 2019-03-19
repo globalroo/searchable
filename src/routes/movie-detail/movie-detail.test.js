@@ -19,7 +19,12 @@ const mockMovie = {
 	popularity: 8.93,
 	poster_path: "/cq6wvDqETqJXgpQplkL0FBw2leM.jpg",
 	production_companies: [
-		{ id: 12, logo_path: "/iaYpEp3LQmb8AfAtmTvpqd4149c.png", name: "New Line Cinema", origin_country: "US" }
+		{
+			id: 12,
+			logo_path: "/iaYpEp3LQmb8AfAtmTvpqd4149c.png",
+			name: "New Line Cinema",
+			origin_country: "US"
+		}
 	],
 	production_countries: [{ iso_3166_1: "US", name: "United States of America" }],
 	release_date: "2014-07-02",
@@ -84,7 +89,11 @@ const mockMovie = {
 };
 
 jest.mock("src/hooks/by-id-loader", () => ({
-	useByIdLoader: () => ({ response: { payload: mockMovie }, loading: false, error: false })
+	useByIdLoader: () => ({
+		response: { payload: mockMovie },
+		loading: false,
+		error: false
+	})
 }));
 
 describe("Movie Detail tests", () => {

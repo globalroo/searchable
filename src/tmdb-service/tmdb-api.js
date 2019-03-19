@@ -105,7 +105,3 @@ export const getWeeklyTrendingMovies = async () =>
 	await safeFetchJson({
 		url: getTrendingMoviesByWeek()
 	});
-
-//keywords
-//search multiples
-//adjust_response

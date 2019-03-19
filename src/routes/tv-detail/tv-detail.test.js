@@ -60,7 +60,9 @@ const mockTv = {
 		vote_average: 8,
 		vote_count: 1
 	},
-	networks: [{ name: "HBO", id: 49, logo_path: "/tuomPhY2UtuPTqqFnKMVHvSb724.png", origin_country: "US" }],
+	networks: [
+		{ name: "HBO", id: 49, logo_path: "/tuomPhY2UtuPTqqFnKMVHvSb724.png", origin_country: "US" }
+	],
 	number_of_episodes: 73,
 	number_of_seasons: 8,
 	origin_country: ["US"],
@@ -77,7 +79,12 @@ const mockTv = {
 			name: "Revolution Sun Studios",
 			origin_country: "US"
 		},
-		{ id: 3268, logo_path: "/tuomPhY2UtuPTqqFnKMVHvSb724.png", name: "HBO", origin_country: "US" },
+		{
+			id: 3268,
+			logo_path: "/tuomPhY2UtuPTqqFnKMVHvSb724.png",
+			name: "HBO",
+			origin_country: "US"
+		},
 		{ id: 12525, logo_path: null, name: "Television 360", origin_country: "" },
 		{ id: 5820, logo_path: null, name: "Generator Entertainment", origin_country: "" },
 		{ id: 12526, logo_path: null, name: "Bighead Littlehead", origin_country: "" }
