@@ -9,7 +9,6 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
   >
     <img
       alt="Tammy"
-      src="404.png"
     />
   </aside>
   <article
@@ -49,15 +48,9 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
             href="/person/55536"
           >
             <div
-              class="MuiAvatar-root-43"
+              class="MuiAvatar-root-43 MuiAvatar-colorDefault-44"
               style="width: 80px; height: 80px; margin: 10px;"
-            >
-              <img
-                alt="Melissa McCarthy"
-                class="MuiAvatar-img-45"
-                srcset="404.png"
-              />
-            </div>
+            />
           </a>
           <p
             class="MuiTypography-root-1 MuiTypography-body1-10 MuiTypography-alignCenter-24"

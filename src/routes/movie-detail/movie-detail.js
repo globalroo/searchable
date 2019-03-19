@@ -17,8 +17,8 @@ export const MovieDetail = ({ id }) => {
 
 	const { payload } = response;
 
-	if (loading) return <div>Loading</div>;
-	if (error) return <div>Error</div>;
+	if (loading) return null;
+	if (error) return <div>Error!</div>;
 	if (!payload) return null;
 
 	return (
