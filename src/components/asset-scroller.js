@@ -1,59 +1,55 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { withStyles, GridList, GridListTile, GridListTileBar, IconButton } from "@material-ui/core";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+import { GridList, GridListTile, GridListTileBar, IconButton } from "@material-ui/core";
 import { Link } from "@reach/router";
+import StarBorderIcon from "@material-ui/icons/StarBorder";
 
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
-
-const styles = theme => ({
+import { useImageLoader } from "src/hooks/image-loader";
+const styles = {
 	root: {
 		display: "flex",
 		flexWrap: "wrap",
-		justifyContent: "space-around",
+		justifyContent: "space-between",
 		overflow: "hidden"
 	},
 	gridList: {
 		flexWrap: "nowrap",
 		transform: "translateZ(0)"
 	},
-	title: {
-		color: theme.palette.primary.light
+	gridListTile: {
+		height: "225px"
 	},
-	titleBar: {
-		background:
-			"linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)"
-	}
-});
+	spacer: { padding: "5px" }
+};
 
-function SingleLineGridList(props) {
-	const { classes, assets } = props;
-
+const GridListAsset = ({ asset }) => {
+	const { poster_path, id, title } = asset;
+	const [image] = useImageLoader(getSmallPosterImage(poster_path));
 	return (
-		<div className={classes.root}>
-			<GridList className={classes.gridList} cols={2.5}>
-				{assets.map(movie => (
-					<Link key={movie.id} to={`/movie/${movie.id}`}>
-						<GridListTile>
-							<img src={getSmallPosterImage(movie.backdrop_path)} alt={movie.title} />
-							<GridListTileBar
-								title={movie.title}
-								actionIcon={
-									<IconButton>
-										<StarBorderIcon className={classes.title} />
-									</IconButton>
-								}
-							/>
-						</GridListTile>
-					</Link>
+		<Link key={id} to={`/movie/${id}`}>
+			<GridListTile style={styles.spacer}>
+				<img src={image} alt={title} style={styles.gridListTile} />
+				<GridListTileBar
+					title={title}
+					actionIcon={
+						<IconButton>
+							<StarBorderIcon />
+						</IconButton>
+					}
+				/>
+			</GridListTile>
+		</Link>
+	);
+};
+
+export const AssetScroller = ({ assets }) => {
+	return (
+		<div style={styles.root}>
+			<GridList style={styles.gridList} cols={2.5}>
+				{assets.map((asset, ix) => (
+					<GridListAsset asset={asset} index={ix} key={asset.id} />
 				))}
 			</GridList>
 		</div>
 	);
-}
-
-SingleLineGridList.propTypes = {
-	classes: PropTypes.object.isRequired
 };
-
-export const AssetScroller = withStyles(styles)(SingleLineGridList);

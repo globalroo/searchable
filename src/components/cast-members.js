@@ -25,8 +25,8 @@ const styles = {
 };
 
 const CastImage = ({ id, name, profile_path }) => {
-	console.log(getSmallPosterImage(profile_path));
 	const [image] = useImageLoader(getSmallPosterImage(profile_path));
+
 	return (
 		<Link to={`/person/${id}`}>
 			<Avatar alt={name} srcSet={image} style={styles.avatar} />
