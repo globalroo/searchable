@@ -9,7 +9,7 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
   >
     <img
       alt="Tammy"
-      src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+      src="404.png"
     />
   </aside>
   <article

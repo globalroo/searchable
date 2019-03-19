@@ -1,39 +1,49 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
+
 import { Avatar, GridList, Typography } from "@material-ui/core";
 import { getSmallPosterImage } from "../tmdb-service/tmdb-config";
 import { Link } from "@reach/router";
+import { useImageLoader } from "../hooks/image-loader";
 
 const styles = {
 	avatar: {
-		margin: 10,
 		width: 80,
-		height: 80
+		height: 80,
+		margin: 10
 	},
 	castContainer: {
 		display: "flex",
-		flexDirection: "column"
+		flexDirection: "column",
+		alignItems: "center"
 	},
 	gridList: {
+		display: "flex",
+		flexDirection: "row",
 		flexWrap: "nowrap",
 		transform: "translateZ(0)"
 	}
 };
 
-function ImageAvatars(props) {
-	const { classes, cast } = props;
+const CastImage = ({ id, name, profile_path }) => {
+	console.log(getSmallPosterImage(profile_path));
+	const [image] = useImageLoader(getSmallPosterImage(profile_path));
 	return (
-		<GridList className={classes.gridList}>
+		<Link to={`/person/${id}`}>
+			<Avatar alt={name} srcSet={image} style={styles.avatar} />
+		</Link>
+	);
+};
+
+export const CastMembers = ({ cast }) => {
+	return (
+		<GridList style={styles.gridList}>
 			{cast.map(member => (
-				<div key={member.id} className={styles.castContainer}>
-					<Link to={`/person/${member.id}`}>
-						<Avatar
-							alt={member.name}
-							src={getSmallPosterImage(member.profile_path)}
-							className={classes.avatar}
-						/>
-					</Link>
+				<div key={member.id} style={styles.castContainer}>
+					<CastImage
+						name={member.name}
+						profile_path={member.profile_path}
+						id={member.id}
+					/>
 					<Typography align="center">{member.name}</Typography>
 					<Typography align="center" variant="caption">
 						{member.character}
@@ -42,10 +52,4 @@ function ImageAvatars(props) {
 			))}
 		</GridList>
 	);
-}
-
-ImageAvatars.propTypes = {
-	classes: PropTypes.object.isRequired
 };
-
-export const CastMembers = withStyles(styles)(ImageAvatars);

@@ -13,9 +13,10 @@ const MINIMUM_SEARCH = 3;
 
 export const AutoComplete = ({ populate }) => {
 	const [searchTerm, setSearchTerm] = useState("");
-	const [debouncedSearchValue] = useDebounce(searchTerm, DEBOUNCE_TIME);
 	const [isOpen, setIsOpen] = useState(false);
 	const [results, setResults] = useState([]);
+
+	const [debouncedSearchValue] = useDebounce(searchTerm, DEBOUNCE_TIME);
 
 	useEffect(() => {
 		setIsOpen(false);
