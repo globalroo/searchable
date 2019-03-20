@@ -24,6 +24,7 @@ const styles = {
 	},
 	spacer: { padding: "5px" }
 };
+
 export const PersonDetail = ({ id }) => {
 	const { response, error, loading } = useByIdLoader({ id, fetcher: getPersonById });
 	const { response: creditsResponse } = useByIdLoader({ id, fetcher: getPersonCreditsById });
@@ -33,12 +34,13 @@ export const PersonDetail = ({ id }) => {
 	if (error) return <div>Error</div>;
 	if (!payload) return null;
 
-	const { birthday, name, biography, profile_path, images } = payload;
+	const { birthday, name, biography, profile_path, images, deathday } = payload;
+
 	const { profiles } = images;
 	return (
 		<div className="wrapper">
 			<header className="header">
-				{name} <Age birthday={birthday} />
+				{name} <Age birthday={birthday} deathday={deathday} />
 			</header>
 			<SideBar poster_path={profile_path} title={name} images={images.profiles}>
 				{profiles && (
