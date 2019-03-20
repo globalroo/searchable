@@ -4,7 +4,7 @@ import { useByIdLoader } from "../../hooks/by-id-loader";
 import { Typography, Divider } from "@material-ui/core";
 import { SideBar } from "src/components/side-bar";
 import { getLargeImage } from "src/tmdb-service/tmdb-config";
-import "./tv-details.css";
+
 export const TvDetail = ({ id }) => {
 	const { response, loading, error } = useByIdLoader({ id, fetcher: getTvById });
 
