@@ -8,6 +8,7 @@ import { MetaInfo } from "./meta-info";
 import { useByIdLoader } from "src/hooks/by-id-loader";
 
 import "./movie-detail.css";
+import { MEDIA_TYPE } from "../../tmdb-service/tmdb-api";
 
 export const MovieDetail = ({ id }) => {
 	const { loading, error, response } = useByIdLoader({
@@ -34,7 +35,10 @@ export const MovieDetail = ({ id }) => {
 			{payload.recommendations.total_results > 0 && (
 				<footer className="footer">
 					<h1>Recommendations</h1>
-					<AssetScroller assets={payload.recommendations.results} />
+					<AssetScroller
+						assets={payload.recommendations.results}
+						link_type={MEDIA_TYPE.MOVIE}
+					/>
 				</footer>
 			)}
 		</div>
