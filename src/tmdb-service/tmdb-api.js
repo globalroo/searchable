@@ -2,6 +2,7 @@ import {
 	getMovieByIdEndpoint,
 	getMovieCastByIdEndpoint,
 	getPersonByIdEndpoint,
+	getPersonCreditsByIdEndpoint,
 	getPopularMovieEndpoint,
 	getRecommendedMoviesByIdEndpoint,
 	getSearchMovieEndpoint,
@@ -104,4 +105,9 @@ export const getDailyTrendingMovies = async () =>
 export const getWeeklyTrendingMovies = async () =>
 	await safeFetchJson({
 		url: getTrendingMoviesByWeek()
+	});
+
+export const getPersonCreditsById = async id =>
+	await safeFetchJson({
+		url: getPersonCreditsByIdEndpoint(id)
 	});

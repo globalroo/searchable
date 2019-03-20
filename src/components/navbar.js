@@ -4,13 +4,18 @@ import { Link } from "@reach/router";
 import { Toolbar } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 
-export const NavBar = () => {
+const styles = {
+	titleLink: { color: "white", textDecoration: "none" },
+	appBarHeader: { background: "black" }
+};
+
+export const NavBar = ({ title }) => {
 	return (
-		<AppBar position="static" style={{ background: "black" }}>
+		<AppBar position="static" style={styles.appBarHeader}>
 			<Toolbar>
 				<Typography variant="title">
-					<Link style={{ color: "white", textDecoration: "none" }} to="/">
-						TMDB Search
+					<Link style={styles.titleLink} to="/">
+						{title}
 					</Link>
 				</Typography>
 			</Toolbar>

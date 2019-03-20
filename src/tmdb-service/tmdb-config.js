@@ -6,6 +6,7 @@ export const BASE_IMG_PATH = "http://image.tmdb.org/t/p";
 const API_KEY = getKey();
 
 export const API = {
+	COMBINED_CREDITS: "/combined_credits",
 	CREDITS: "/credits",
 	DAY: "/day",
 	MOVIE: "/movie",
@@ -38,5 +39,8 @@ export const getTrendingMoviesByDay = () =>
 	getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.DAY}`);
 export const getTrendingMoviesByWeek = () =>
 	getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
-export const getPersonByIdEndpoint = id => getAuthorisedEndpoint(`${API.PERSON}/${id}`);
+export const getPersonByIdEndpoint = id =>
+	getAuthorisedEndpoint(`${API.PERSON}/${id}`) + "&append_to_response=images";
+export const getPersonCreditsByIdEndpoint = id =>
+	getAuthorisedEndpoint(`${API.PERSON}/${id}${API.COMBINED_CREDITS}`);
 export const getTvByIdEndpoint = id => getAuthorisedEndpoint(`${API.TV}/${id}`);

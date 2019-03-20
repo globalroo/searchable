@@ -2,7 +2,7 @@ import React from "react";
 
 import { AssetScroller } from "src/components/asset-scroller";
 import { getMovieById } from "src/tmdb-service/tmdb-api";
-import { SideBar } from "./side-bar";
+import { SideBar } from "src/components/side-bar";
 import { MetaInfo } from "./meta-info";
 
 import { useByIdLoader } from "src/hooks/by-id-loader";
@@ -18,7 +18,7 @@ export const MovieDetail = ({ id }) => {
 	const { payload } = response;
 
 	if (loading) return null;
-	if (error) return <div>Error!</div>;
+	if (error) return <div>Error</div>;
 	if (!payload) return null;
 
 	return (

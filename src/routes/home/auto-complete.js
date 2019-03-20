@@ -4,7 +4,7 @@ import { Paper } from "@material-ui/core";
 import { useDebounce } from "use-debounce";
 
 import { getSearchMultiResults } from "src/tmdb-service/tmdb-api.js";
-import { navigateTo } from "./navigate";
+import { navigateTo } from "../../helpers/navigate";
 import { AutoCompleteItem } from "./auto-complete-item";
 import { SearchInput } from "./search-input";
 
@@ -40,7 +40,6 @@ export const AutoComplete = ({ populate }) => {
 
 	const handleEnter = e => {
 		if (e.key === "Enter") {
-			//alert("Send inputValue to GridList component");
 			doSearch();
 		}
 	};

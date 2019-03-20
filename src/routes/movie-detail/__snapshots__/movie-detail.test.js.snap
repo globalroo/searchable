@@ -9,7 +9,6 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
   >
     <img
       alt="Tammy"
-      src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
     />
   </aside>
   <article
@@ -45,6 +44,14 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
         <div
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
+          <a
+            href="/person/55536"
+          >
+            <div
+              class="MuiAvatar-root-43 MuiAvatar-colorDefault-44"
+              style="width: 80px; height: 80px; margin: 10px;"
+            />
+          </a>
           <p
             class="MuiTypography-root-1 MuiTypography-body1-10 MuiTypography-alignCenter-24"
           >
@@ -79,42 +86,42 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
           href="/movie/136795"
         >
           <li
-            class="MuiGridListTile-root-43"
+            class="MuiGridListTile-root-46"
             style="padding: 5px;"
           >
             <div
-              class="MuiGridListTile-tile-44"
+              class="MuiGridListTile-tile-47"
             >
               <img
                 alt="The Heat"
                 style="height: 225px;"
               />
               <div
-                class="MuiGridListTileBar-root-47 MuiGridListTileBar-titlePositionBottom-48"
+                class="MuiGridListTileBar-root-50 MuiGridListTileBar-titlePositionBottom-51"
               >
                 <div
-                  class="MuiGridListTileBar-titleWrap-51 MuiGridListTileBar-titleWrapActionPosRight-53"
+                  class="MuiGridListTileBar-titleWrap-54 MuiGridListTileBar-titleWrapActionPosRight-56"
                 >
                   <div
-                    class="MuiGridListTileBar-title-54"
+                    class="MuiGridListTileBar-title-57"
                   >
                     The Heat
                   </div>
                 </div>
                 <div
-                  class="MuiGridListTileBar-actionIcon-56"
+                  class="MuiGridListTileBar-actionIcon-59"
                 >
                   <button
-                    class="MuiButtonBase-root-64 MuiIconButton-root-58"
+                    class="MuiButtonBase-root-67 MuiIconButton-root-61"
                     tabindex="0"
                     type="button"
                   >
                     <span
-                      class="MuiIconButton-label-63"
+                      class="MuiIconButton-label-66"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root-67"
+                        class="MuiSvgIcon-root-70"
                         focusable="false"
                         role="presentation"
                         viewBox="0 0 24 24"
@@ -129,7 +136,7 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
                       </svg>
                     </span>
                     <span
-                      class="MuiTouchRipple-root-76"
+                      class="MuiTouchRipple-root-79"
                     />
                   </button>
                 </div>

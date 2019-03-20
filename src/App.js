@@ -12,7 +12,7 @@ import { Home } from "src/routes/home/home";
 const App = () => {
 	return (
 		<>
-			<NavBar />
+			<NavBar title="TMDB Endpoints and search" />
 			<Router>
 				<Home path="/" />
 				<PersonDetail path="person/:id" />

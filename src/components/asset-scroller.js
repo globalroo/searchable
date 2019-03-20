@@ -5,6 +5,8 @@ import StarBorderIcon from "@material-ui/icons/StarBorder";
 
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { useImageLoader } from "src/hooks/image-loader";
+import { MEDIA_TYPE } from "../tmdb-service/tmdb-api";
+
 const styles = {
 	root: {
 		display: "flex",
@@ -22,11 +24,11 @@ const styles = {
 	spacer: { padding: "5px" }
 };
 
-const GridListAsset = ({ asset }) => {
+const GridListAsset = ({ asset, link_type = MEDIA_TYPE.MOVIE }) => {
 	const { poster_path, id, title } = asset;
 	const [image] = useImageLoader(getSmallPosterImage(poster_path));
 	return (
-		<Link key={id} to={`/movie/${id}`}>
+		<Link key={id} to={`/${link_type}/${id}`}>
 			<GridListTile style={styles.spacer}>
 				<img src={image} alt={title} style={styles.gridListTile} />
 				<GridListTileBar
@@ -45,7 +47,7 @@ const GridListAsset = ({ asset }) => {
 export const AssetScroller = ({ assets }) => {
 	return (
 		<div style={styles.root}>
-			<GridList style={styles.gridList} cols={2.5}>
+			<GridList style={styles.gridList}>
 				{assets.map((asset, ix) => (
 					<GridListAsset asset={asset} index={ix} key={asset.id} />
 				))}
