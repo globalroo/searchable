@@ -26,6 +26,7 @@ export const MovieDetail = ({ id }) => {
 			<SideBar poster_path={payload.poster_path} title={payload.title} />
 			<MetaInfo
 				title={payload.title}
+				release_date={payload.release_date}
 				tagline={payload.tagline}
 				overview={payload.overview}
 				cast={payload.credits.cast}

@@ -25,9 +25,44 @@ const styles = {
 	spacer: { padding: "5px" }
 };
 
+const NaivePictureScroller = ({ profiles = [], name }) => {
+	if (profiles.length === 0) return null;
+	return (
+		<GridList style={styles.gridList} component="div">
+			{profiles.map((member, ix) => (
+				<div key={`${member.id}_${ix}`}>
+					<img
+						src={getSmallPosterImage(member.file_path)}
+						alt={name}
+						style={styles.gridListTile}
+					/>
+					<Typography align="center">{member.name}</Typography>
+					<Typography align="center" variant="caption">
+						{member.character}
+					</Typography>
+				</div>
+			))}
+		</GridList>
+	);
+};
+const OtherCredits = ({ id }) => {
+	const { response } = useByIdLoader({ id, fetcher: getPersonCreditsById });
+	const { payload } = response;
+
+	if (!payload) return null;
+
+	const { cast } = payload;
+
+	return (
+		<div className="content-row-2">
+			<h1>Other Credits</h1>
+			<AssetScroller assets={cast} />
+		</div>
+	);
+};
 export const PersonDetail = ({ id }) => {
 	const { response, error, loading } = useByIdLoader({ id, fetcher: getPersonById });
-	const { response: creditsResponse } = useByIdLoader({ id, fetcher: getPersonCreditsById });
+
 	const { payload } = response;
 
 	if (loading) return null;
@@ -42,54 +77,23 @@ export const PersonDetail = ({ id }) => {
 			<header className="header">
 				{name} <Age birthday={birthday} deathday={deathday} />
 			</header>
+
 			<SideBar poster_path={profile_path} title={name} images={images.profiles}>
-				{profiles && (
-					<GridList style={styles.gridList} component="div">
-						{profiles.map(member => (
-							<div key={member.id}>
-								<img
-									src={getSmallPosterImage(member.file_path)}
-									alt={name}
-									style={styles.gridListTile}
-								/>
-								<Typography align="center">{member.name}</Typography>
-								<Typography align="center" variant="caption">
-									{member.character}
-								</Typography>
-							</div>
-						))}
-					</GridList>
-				)}
+				<NaivePictureScroller profiles={profiles} name={name} />
 			</SideBar>
 
 			<article className="content">
 				<h1 className="bold-header-uppercase">Biography</h1>
 				<Divider />
 				<br />
-				{/* <h1>{tagline}</h1> */}
 				<div className="content-row-1">
 					<Typography>{biography}</Typography>
 				</div>
 				<br />
 				<Divider />
 				<br />
-				{creditsResponse && creditsResponse.payload && (
-					<div className="content-row-2">
-						<h1>Other Credits</h1>
-						<AssetScroller assets={creditsResponse.payload.cast} />
-					</div>
-				)}
-				{/*  Paginated table? {creditsResponse && creditsResponse.payload && (
-					<div className="content-row-2">
-						<h1>Other roles</h1>
-						{creditsResponse.payload.cast.map(cast => {
-							return <Typography>{JSON.stringify(cast)}</Typography>;
-						})}
-					</div>
-				)} */}
+				<OtherCredits id={id} />
 			</article>
-
-			{creditsResponse && creditsResponse.payload && <footer className="footer" />}
 		</div>
 	);
 };

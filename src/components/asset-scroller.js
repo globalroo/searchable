@@ -28,7 +28,7 @@ const GridListAsset = ({ asset, link_type = MEDIA_TYPE.MOVIE }) => {
 	const { poster_path, id, title } = asset;
 	const [image] = useImageLoader(getSmallPosterImage(poster_path));
 	return (
-		<Link key={id} to={`/${link_type}/${id}`}>
+		<Link to={`/${link_type}/${id}`}>
 			<GridListTile style={styles.spacer}>
 				<img src={image} alt={title} style={styles.gridListTile} />
 				<GridListTileBar
@@ -49,7 +49,7 @@ export const AssetScroller = ({ assets }) => {
 		<div style={styles.root}>
 			<GridList style={styles.gridList}>
 				{assets.map((asset, ix) => (
-					<GridListAsset asset={asset} index={ix} key={asset.id} />
+					<GridListAsset asset={asset} key={`${asset.id}_${ix}`} />
 				))}
 			</GridList>
 		</div>
