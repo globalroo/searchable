@@ -5,6 +5,9 @@ export const BASE_IMG_PATH = "http://image.tmdb.org/t/p";
 
 const API_KEY = getKey();
 
+// Obtain image sizes here
+// https://api.themoviedb.org/3/configuration?api_key=
+
 export const API = {
 	COMBINED_CREDITS: "/combined_credits",
 	CREDITS: "/credits",
@@ -16,6 +19,7 @@ export const API = {
 	SEARCH_MOVIES: "/search/movie",
 	SEARCH_MULTI: "/search/multi",
 	SMALL_IMG_WIDTH: "/w300",
+	LARGE_IMG_WIDTH: "/w1280",
 	TRENDING: "/trending",
 	TV: "/tv",
 	WEEK: "/week"
@@ -24,6 +28,8 @@ export const API = {
 export const getAuthorisedEndpoint = endpoint => `${BASE_URL}${endpoint}?api_key=${API_KEY}`;
 export const getSmallPosterImage = imagePath =>
 	`${BASE_IMG_PATH}${API.SMALL_IMG_WIDTH}/${imagePath}`;
+export const getLargeImage = imagePath => `${BASE_IMG_PATH}${API.LARGE_IMG_WIDTH}/${imagePath}`;
+
 export const getMovieByIdEndpoint = id =>
 	getAuthorisedEndpoint(`${API.MOVIE}/${id}`) + "&append_to_response=recommendations,credits";
 export const getMovieCastByIdEndpoint = id =>

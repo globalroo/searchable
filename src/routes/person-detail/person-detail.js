@@ -78,7 +78,7 @@ export const PersonDetail = ({ id }) => {
 				{name} <Age birthday={birthday} deathday={deathday} />
 			</header>
 
-			<SideBar poster_path={profile_path} title={name} images={images.profiles}>
+			<SideBar poster_path={profile_path} title={name}>
 				<NaivePictureScroller profiles={profiles} name={name} />
 			</SideBar>
 

@@ -44,7 +44,7 @@ h1, p {
 }
 
 .wrapper > * {
-	background-color: #fff;
+	/* //background-color: #fff; */
 	border-radius: 5px;
 	padding: 20px;
 	margin-bottom: 10px;
