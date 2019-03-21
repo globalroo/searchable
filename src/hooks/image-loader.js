@@ -8,6 +8,7 @@ export const useImageLoader = imageSrc => {
 
 	useEffect(() => {
 		const loader = new window.Image(imageSrc);
+
 		const setLoaded = () => {
 			if (mounted.current) setImage(imageSrc);
 		};
