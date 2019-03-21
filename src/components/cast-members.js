@@ -28,7 +28,7 @@ const CastImage = ({ id, name, profile_path }) => {
 	const [image] = useImageLoader(getSmallPosterImage(profile_path));
 	return (
 		<Link to={`/person/${id}`}>
-			<Avatar alt={name} srcSet={image} style={styles.avatar} />
+			<Avatar alt={name} src={image} style={styles.avatar} />
 		</Link>
 	);
 };
@@ -36,8 +36,8 @@ const CastImage = ({ id, name, profile_path }) => {
 export const CastMembers = ({ cast }) => {
 	return (
 		<GridList style={styles.gridList}>
-			{cast.map(member => (
-				<div key={member.id} style={styles.castContainer}>
+			{cast.map((member, ix) => (
+				<div key={`${member.id}_${ix}_cast`} style={styles.castContainer}>
 					<CastImage
 						name={member.name}
 						profile_path={member.profile_path}

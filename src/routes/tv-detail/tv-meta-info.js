@@ -31,11 +31,15 @@ export const TvMetaInfo = ({ meta }) => {
 					status={status}
 				/>
 			</div>
-			<Divider />
-			<div className="content-row-2">
-				<CastMembers cast={credits.cast} />
-			</div>
-			<Divider />
+			{credits.cast && credits.cast.length > 0 && (
+				<>
+					<Divider />
+					<div className="content-row-2">
+						<CastMembers cast={credits.cast} />
+					</div>
+					<Divider />
+				</>
+			)}
 		</article>
 	);
 };

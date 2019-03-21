@@ -22,19 +22,21 @@ export const TvDetail = ({ id }) => {
 		<>
 			<div className="wrapper">
 				<SideBar poster_path={poster_path} title={name}>
-					<List
-						dense={true}
-						subheader={<ListSubheader component="div">Creators:</ListSubheader>}
-					>
-						{created_by.map(({ id, name, profile_path }, ix) => (
-							<TvCreatorList
-								id={id}
-								key={`creator_${id}_${ix}`}
-								name={name}
-								profile_path={profile_path}
-							/>
-						))}
-					</List>
+					{created_by && created_by.length > 0 && (
+						<List
+							dense={true}
+							subheader={<ListSubheader component="div">Creators:</ListSubheader>}
+						>
+							{created_by.map(({ id, name, profile_path }, ix) => (
+								<TvCreatorList
+									id={id}
+									key={`creator_${id}_${ix}`}
+									name={name}
+									profile_path={profile_path}
+								/>
+							))}
+						</List>
+					)}
 				</SideBar>
 				<TvMetaInfo meta={payload} />
 			</div>
