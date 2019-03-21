@@ -19,7 +19,7 @@ const getAutoCompleteItemIcon = media_type => {
 
 export const AutoCompleteItem = ({ item, index, highlighted, selected, ...props }) => (
 	<MenuItem {...props} selected={highlighted} component="div">
-		{getAutoCompleteItemIcon(item.media_type)}
+		{getAutoCompleteItemIcon(item.media_type)}&nbsp;
 		<Typography>{`${item.title || item.name}`}</Typography>
 	</MenuItem>
 );

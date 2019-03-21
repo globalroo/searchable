@@ -3,69 +3,70 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
 p {
-  margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .home-wrapper {
-  max-width: 940px;
-  margin: 0 20px;
-  display: grid;
-  grid-gap: 10px;
+    max-width: 60%;
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 10px;
 }
 
 /* no grid support? */
 
 .home-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left:40px;
-  padding-right:40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .home-wrapper {
-  display: grid;
-  margin: 1em auto;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
+    display: grid;
+    margin: 1em auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
 }
 
 .home-panel {
-  /* needed for the flex layout*/
-  margin-left: 5px;
-  margin-right: 5px;
-  flex: 1 1 200px;
+    /* needed for the flex layout*/
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 200px;
 }
 
 .home-header,
 .home-footer {
-  margin-top:30px;
-  padding-left:40px;
-  padding-right:40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
-.home-wrapper > * {
-  border-radius: 5px;
-  padding: 10px;
-
-  margin-bottom: 10px;
+.home-wrapper>* {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 @supports (display: grid) {
-  .home-wrapper > * {
-    margin: 0;
-  }
+    .home-wrapper>* {
+        margin: 0;
+    }
 }
 
 .image-tile {
-  transition: transform .2s;
+    transition: transform .2s;
+    filter: drop-shadow(0 0 0.15rem black);
 }
 
 .image-tile:hover {
-  transform: scale(1.125);
-  cursor: pointer;
+    transform: scale(1.125);
+    cursor: pointer;
 }
