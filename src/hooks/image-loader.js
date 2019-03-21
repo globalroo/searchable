@@ -4,6 +4,7 @@ import Oh404 from "src/assets/404.png";
 export const useImageLoader = imageSrc => {
 	const [image, setImage] = useState();
 	const loader = new window.Image(imageSrc);
+
 	useEffect(() => {
 		loader.onload = () => {
 			setImage(imageSrc);
@@ -13,5 +14,6 @@ export const useImageLoader = imageSrc => {
 		};
 		loader.src = imageSrc;
 	}, [image]);
+
 	return [image];
 };

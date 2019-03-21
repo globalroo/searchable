@@ -169,7 +169,7 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [request] = mockFetch.mock.calls;
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(
-				`"https://api.themoviedb.org/3/tv/1?api_key=test-key"`
+				`"https://api.themoviedb.org/3/tv/1?api_key=test-key&append_to_response=recommendations,credits"`
 			);
 		});
 	});

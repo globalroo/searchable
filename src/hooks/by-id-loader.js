@@ -5,6 +5,7 @@ export const useByIdLoader = ({ id, fetcher }) => {
 	const [response, setResponse] = useState({});
 	const [error, setError] = useState(false);
 	const [loading, setLoading] = useState(true);
+
 	useEffect(() => {
 		setError(() => false);
 		setLoading(() => true);
@@ -16,5 +17,6 @@ export const useByIdLoader = ({ id, fetcher }) => {
 			setResponse(() => response);
 		});
 	}, [id]);
+
 	return { loading, error, response };
 };

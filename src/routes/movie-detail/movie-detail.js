@@ -1,14 +1,12 @@
 import React from "react";
 
+import "./movie-detail.css";
 import { AssetScroller } from "src/components/asset-scroller";
 import { getMovieById } from "src/tmdb-service/tmdb-api";
-import { SideBar } from "src/components/side-bar";
-import { MetaInfo } from "./meta-info";
-
-import { useByIdLoader } from "src/hooks/by-id-loader";
-
-import "./movie-detail.css";
 import { MEDIA_TYPE } from "../../tmdb-service/tmdb-api";
+import { MetaInfo } from "./movie-meta-info";
+import { SideBar } from "src/components/side-bar";
+import { useByIdLoader } from "src/hooks/by-id-loader";
 
 export const MovieDetail = ({ id }) => {
 	const { loading, error, response } = useByIdLoader({

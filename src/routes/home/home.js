@@ -3,6 +3,7 @@ import { AutoComplete } from "./auto-complete";
 import { Footer } from "src/components/footer";
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { navigateTo } from "../../helpers/navigate";
+
 import "./home.css";
 
 export const Home = () => {

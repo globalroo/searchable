@@ -1,65 +1,13 @@
 import React from "react";
-import { getPersonById, getPersonCreditsById } from "src/tmdb-service/tmdb-api";
-import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
-import { AssetScroller } from "src/components/asset-scroller";
-import { useByIdLoader } from "../../hooks/by-id-loader";
-import { SideBar } from "src/components/side-bar";
+
 import { Age } from "src/components/age";
-import { Typography, Divider, GridList } from "@material-ui/core";
+import { getPersonById } from "src/tmdb-service/tmdb-api";
+import { PersonCredits } from "./person-credits";
+import { PersonPictureScroller } from "./person-picture-scroller";
+import { SideBar } from "src/components/side-bar";
+import { Typography, Divider } from "@material-ui/core";
+import { useByIdLoader } from "../../hooks/by-id-loader";
 
-const styles = {
-	root: {
-		display: "flex",
-		flexWrap: "wrap",
-		justifyContent: "space-between",
-		overflow: "hidden"
-	},
-	gridList: {
-		flexWrap: "nowrap",
-		transform: "translateZ(0)",
-		width: "300px"
-	},
-	gridListTile: {
-		width: "110px"
-	},
-	spacer: { padding: "5px" }
-};
-
-const NaivePictureScroller = ({ profiles = [], name }) => {
-	if (profiles.length === 0) return null;
-	return (
-		<GridList style={styles.gridList} component="div">
-			{profiles.map((member, ix) => (
-				<div key={`${member.id}_${ix}`}>
-					<img
-						src={getSmallPosterImage(member.file_path)}
-						alt={name}
-						style={styles.gridListTile}
-					/>
-					<Typography align="center">{member.name}</Typography>
-					<Typography align="center" variant="caption">
-						{member.character}
-					</Typography>
-				</div>
-			))}
-		</GridList>
-	);
-};
-const OtherCredits = ({ id }) => {
-	const { response } = useByIdLoader({ id, fetcher: getPersonCreditsById });
-	const { payload } = response;
-
-	if (!payload) return null;
-
-	const { cast } = payload;
-
-	return (
-		<div className="content-row-2">
-			<h1>Other Credits</h1>
-			<AssetScroller assets={cast} />
-		</div>
-	);
-};
 export const PersonDetail = ({ id }) => {
 	const { response, error, loading } = useByIdLoader({ id, fetcher: getPersonById });
 
@@ -70,8 +18,8 @@ export const PersonDetail = ({ id }) => {
 	if (!payload) return null;
 
 	const { birthday, name, biography, profile_path, images, deathday } = payload;
-
 	const { profiles } = images;
+
 	return (
 		<div className="wrapper">
 			<header className="header">
@@ -79,7 +27,7 @@ export const PersonDetail = ({ id }) => {
 			</header>
 
 			<SideBar poster_path={profile_path} title={name}>
-				<NaivePictureScroller profiles={profiles} name={name} />
+				<PersonPictureScroller images={profiles} name={name} />
 			</SideBar>
 
 			<article className="content">
@@ -87,12 +35,12 @@ export const PersonDetail = ({ id }) => {
 				<Divider />
 				<br />
 				<div className="content-row-1">
-					<Typography>{biography}</Typography>
+					<Typography>{biography || "No biography"}</Typography>
 				</div>
 				<br />
 				<Divider />
 				<br />
-				<OtherCredits id={id} />
+				<PersonCredits id={id} />
 			</article>
 		</div>
 	);

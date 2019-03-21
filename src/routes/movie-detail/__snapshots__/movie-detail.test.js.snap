@@ -18,6 +18,9 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
       class="bold-header-uppercase"
     >
       Tammy
+       [
+      2014
+      ]
     </h1>
     <h1>
       She hit the road. The road hit back.
@@ -82,68 +85,64 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
         class="MuiGridList-root-42"
         style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0);"
       >
-        <a
-          href="/movie/136795"
+        <li
+          class="MuiGridListTile-root-46 pointer-hover"
+          style="padding: 5px;"
         >
-          <li
-            class="MuiGridListTile-root-46"
-            style="padding: 5px;"
+          <div
+            class="MuiGridListTile-tile-47"
           >
+            <img
+              alt="The Heat"
+              style="height: 225px;"
+            />
             <div
-              class="MuiGridListTile-tile-47"
+              class="MuiGridListTileBar-root-50 MuiGridListTileBar-titlePositionBottom-51"
             >
-              <img
-                alt="The Heat"
-                style="height: 225px;"
-              />
               <div
-                class="MuiGridListTileBar-root-50 MuiGridListTileBar-titlePositionBottom-51"
+                class="MuiGridListTileBar-titleWrap-54 MuiGridListTileBar-titleWrapActionPosRight-56"
               >
                 <div
-                  class="MuiGridListTileBar-titleWrap-54 MuiGridListTileBar-titleWrapActionPosRight-56"
+                  class="MuiGridListTileBar-title-57"
                 >
-                  <div
-                    class="MuiGridListTileBar-title-57"
-                  >
-                    The Heat
-                  </div>
-                </div>
-                <div
-                  class="MuiGridListTileBar-actionIcon-59"
-                >
-                  <button
-                    class="MuiButtonBase-root-67 MuiIconButton-root-61"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiIconButton-label-66"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root-70"
-                        focusable="false"
-                        role="presentation"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root-79"
-                    />
-                  </button>
+                  The Heat
                 </div>
               </div>
+              <div
+                class="MuiGridListTileBar-actionIcon-59"
+              >
+                <button
+                  class="MuiButtonBase-root-67 MuiIconButton-root-61"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label-66"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root-70"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root-79"
+                  />
+                </button>
+              </div>
             </div>
-          </li>
-        </a>
+          </div>
+        </li>
       </ul>
     </div>
   </footer>

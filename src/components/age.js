@@ -1,7 +1,9 @@
 import React from "react";
-import { differenceInYears, format } from "date-fns";
-import Accessibility from "@material-ui/icons/Accessibility";
-import MoodBad from "@material-ui/icons/MoodBad";
+import { getStandardDateFormat } from "src/helpers/date";
+import { differenceInYears } from "date-fns";
+import Alive from "@material-ui/icons/Accessibility";
+import Dead from "@material-ui/icons/MoodBad";
+
 const styles = {
 	container: {
 		display: "flex",
@@ -16,11 +18,11 @@ export const Age = ({ birthday, deathday }) => {
 	const toDay = deathday ? deathday : new Date();
 	return (
 		<div style={styles.container}>
-			{deathday ? <MoodBad /> : <Accessibility />}
-			{format(birthDate, "dddd Do MMMM YYYY")}
+			{deathday ? <Dead /> : <Alive />}
+			{getStandardDateFormat(birthDate)}
 			{" - "}
-			{deathday && format(toDay, "dddd Do MMMM YYYY")} ({differenceInYears(toDay, birthDate)}{" "}
-			years old)
+			{deathday && getStandardDateFormat(toDay)} ({differenceInYears(toDay, birthDate)} years
+			old)
 		</div>
 	);
 };

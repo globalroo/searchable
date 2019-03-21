@@ -5,8 +5,8 @@ import { Toolbar } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 
 const styles = {
-	titleLink: { color: "white", textDecoration: "none" },
-	appBarHeader: { background: "black" }
+	appBarHeader: { background: "black" },
+	titleLink: { color: "white", textDecoration: "none" }
 };
 
 export const NavBar = ({ title }) => {

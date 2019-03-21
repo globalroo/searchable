@@ -11,6 +11,10 @@ body {
 h1, p {
 	margin: 0 0 1em 0;
 }
+.centred-content{
+	justify-content: center;
+	align-items: center
+}
 
 .wrapper {
 	max-width: 940px;

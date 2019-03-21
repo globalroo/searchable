@@ -1,6 +1,6 @@
 import React from "react";
-import { Divider, Typography } from "@material-ui/core";
 import { CastMembers } from "src/components/cast-members";
+import { Divider, Typography } from "@material-ui/core";
 import { format } from "date-fns";
 
 export const MetaInfo = ({ tagline, overview, title, cast, release_date }) => (

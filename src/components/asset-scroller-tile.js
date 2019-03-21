@@ -1,9 +1,10 @@
 import React from "react";
+
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { useImageLoader } from "src/hooks/image-loader";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { navigateTo } from "../helpers/navigate";
 import { GridListTile, GridListTileBar, IconButton } from "@material-ui/core";
+import StarBorderIcon from "@material-ui/icons/StarBorder";
 
 const styles = {
 	gridListTile: {
