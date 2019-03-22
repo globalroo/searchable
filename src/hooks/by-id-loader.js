@@ -5,18 +5,14 @@ export const useByIdLoader = ({ id, fetcher }) => {
 	const [response, setResponse] = useState({});
 	const [error, setError] = useState(false);
 	const [loading, setLoading] = useState(true);
-
 	const mounted = useRef(true);
 
 	useEffect(() => {
-		if (mounted.current === false) return;
-
-		setError(() => false);
-		setLoading(() => true);
-
+		mounted.current = true;
 		fetcher(id).then(response => {
-			if (mounted.current === false) return;
-
+			if (mounted.current === false) return; //Argh - switching through recommendations
+			setError(() => false);
+			setLoading(() => true);
 			if (!response.response.ok) {
 				setError(() => true);
 			}
