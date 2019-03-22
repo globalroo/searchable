@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Downshift from "downshift";
 import { Paper } from "@material-ui/core";
-import { useDebounce } from "use-debounce";
-
 import { getSearchMultiResults } from "src/tmdb-service/tmdb-api.js";
 import { navigateTo } from "../../helpers/navigate";
 import { AutoCompleteItem } from "./auto-complete-item";
 import { SearchInput } from "./search-input";
 
-const DEBOUNCE_TIME = 350; //ms
+const DEBOUNCE_TIME = 400; //ms
 const MINIMUM_SEARCH = 3;
 
 export const AutoComplete = ({ populate }) => {
@@ -16,30 +14,46 @@ export const AutoComplete = ({ populate }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [results, setResults] = useState([]);
 
-	const [debouncedSearchValue] = useDebounce(searchTerm, DEBOUNCE_TIME);
+	const debounce = useRef();
 
 	useEffect(() => {
-		setIsOpen(false);
-		if (debouncedSearchValue.length === 0) {
-			setResults([]);
-			populate([]);
-		} else if (debouncedSearchValue.length >= MINIMUM_SEARCH) {
-			getSearchMultiResults(debouncedSearchValue).then(({ payload }) => {
-				setIsOpen(true);
-				setResults(() => payload.results.slice(0, 10));
-			});
-		}
-	}, [debouncedSearchValue]);
+		clearTimeout(debounce.current);
+		debounce.current = setTimeout(() => {
+			setIsOpen(false);
+			if (searchTerm.length === 0) {
+				setResults([]);
+				populate([]);
+			} else if (searchTerm.length >= MINIMUM_SEARCH) {
+				getSearchMultiResults(searchTerm).then(({ payload }) => {
+					setIsOpen(true);
+					setResults(() => payload.results.slice(0, 10));
+				});
+			}
+		}, DEBOUNCE_TIME);
+	}, [searchTerm]);
 
 	const searchValue = ({ target }) => setSearchTerm(target.value);
 
 	const doSearch = () => {
 		setIsOpen(false);
-		populate(results);
+		if (searchTerm.length >= MINIMUM_SEARCH) {
+			getSearchMultiResults(searchTerm).then(({ payload }) => {
+				populate(payload.results);
+			});
+		}
+	};
+
+	const handleClear = e => {
+		clearTimeout(debounce.current);
+		setIsOpen(false);
+		setSearchTerm("");
+		setResults([]);
+		populate([]);
 	};
 
 	const handleEnter = e => {
 		if (e.key === "Enter") {
+			clearTimeout(debounce.current);
 			doSearch();
 		}
 	};
@@ -59,6 +73,7 @@ export const AutoComplete = ({ populate }) => {
 							onChange: searchValue,
 							onSearch: doSearch,
 							onKeyDown: handleEnter,
+							onClear: handleClear,
 							value: inputValue,
 							placeholder: "Search Movies, TV Shows and Actors"
 						})}

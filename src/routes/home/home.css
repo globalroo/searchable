@@ -63,7 +63,7 @@ p {
 
 .image-tile {
     transition: transform .2s;
-    filter: drop-shadow(0 0 0.15rem black);
+    filter: drop-shadow(0 0 0.05rem black);
 }
 
 .image-tile:hover {

@@ -18,12 +18,12 @@ const styles = {
 	}
 };
 
-export const AssetScroller = ({ assets, link_type }) => {
+export const AssetScroller = ({ assets, media_type }) => {
 	return (
 		<div style={styles.root}>
 			<GridList style={styles.gridList}>
 				{assets.map((asset, ix) => {
-					const mappedAsset = link_type ? { ...asset, media_type: link_type } : asset;
+					const mappedAsset = asset.media_type ? asset : { ...asset, media_type };
 					return <AssetScrollerTile asset={mappedAsset} key={`${asset.id}_${ix}`} />;
 				})}
 			</GridList>

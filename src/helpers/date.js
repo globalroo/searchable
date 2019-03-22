@@ -9,7 +9,6 @@ const humanReadable = duration =>
 export const getStandardDateFormat = dateStr => format(dateStr, "dddd Do MMMM YYYY");
 
 export const getEpisodeLength = episodeLength => {
-	console.log(episodeLength);
 	if (!episodeLength) return "Unknown";
 	if (typeof episodeLength !== "string") {
 		const mapped = episodeLength.map(duration => humanReadable(parseInt(duration)));

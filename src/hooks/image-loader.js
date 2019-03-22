@@ -3,12 +3,11 @@ import Oh404 from "src/assets/404.png";
 
 export const useImageLoader = imageSrc => {
 	const [image, setImage] = useState(imageSrc);
-
 	const mounted = useRef(true);
 
 	useEffect(() => {
+		mounted.current = true;
 		const loader = new window.Image(imageSrc);
-
 		const setLoaded = () => {
 			if (mounted.current) setImage(imageSrc);
 		};
@@ -25,7 +24,7 @@ export const useImageLoader = imageSrc => {
 			loader.removeEventListener("load", setLoaded);
 			loader.removeEventListener("error", setError);
 		};
-	}, [image]);
+	}, [imageSrc]);
 
 	return [image];
 };

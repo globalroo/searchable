@@ -11,8 +11,7 @@
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
 		"react-scripts": "2.1.8",
-		"reset-css": "4.0.1",
-		"use-debounce": "1.1.1"
+		"reset-css": "4.0.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",

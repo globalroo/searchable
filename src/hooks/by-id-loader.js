@@ -10,7 +10,7 @@ export const useByIdLoader = ({ id, fetcher }) => {
 	useEffect(() => {
 		mounted.current = true;
 		fetcher(id).then(response => {
-			if (mounted.current === false) return; //Argh - switching through recommendations
+			if (mounted.current === false) return;
 			setError(() => false);
 			setLoading(() => true);
 			if (!response.response.ok) {

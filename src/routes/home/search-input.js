@@ -27,7 +27,7 @@ const styles = {
 	}
 };
 
-function BasicSearchInput({ classes, value, onChange, onSearch, ...props }) {
+function BasicSearchInput({ classes, value, onChange, onClear, onSearch, ...props }) {
 	return (
 		<Paper className={classes.root}>
 			<InputBase className={classes.input} value={value} onChange={onChange} {...props} />
@@ -35,7 +35,7 @@ function BasicSearchInput({ classes, value, onChange, onSearch, ...props }) {
 				<IconButton
 					className={classes.iconButton}
 					aria-label="Clear"
-					onClick={() => onChange({ target: { value: "" } })}
+					onClick={() => onClear()}
 				>
 					<Close />
 				</IconButton>

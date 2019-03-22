@@ -35,7 +35,7 @@ export const MovieDetail = ({ id }) => {
 					<h1>Recommendations</h1>
 					<AssetScroller
 						assets={payload.recommendations.results}
-						link_type={MEDIA_TYPE.MOVIE}
+						media_type={MEDIA_TYPE.MOVIE}
 					/>
 				</footer>
 			)}

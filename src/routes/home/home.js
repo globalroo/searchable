@@ -22,7 +22,7 @@ export const Home = () => {
 				{results.map(tile => {
 					const value = tile.name || tile.title;
 					return (
-						<div className="home-panel image-tile">
+						<div key={tile.id} className="home-panel image-tile">
 							<img
 								style={{ width: "100%" }}
 								src={getSmallPosterImage(tile.poster_path)}
