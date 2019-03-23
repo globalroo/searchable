@@ -12,6 +12,8 @@ export const API = {
 	COMBINED_CREDITS: "/combined_credits",
 	CREDITS: "/credits",
 	DAY: "/day",
+	DISCOVER_MOVIE: "/discover/movie",
+	GENRES: "/genre/movie/list",
 	MOVIE: "/movie",
 	PERSON: "/person",
 	POPULAR_MOVIES: "/movie/popular",
@@ -55,6 +57,12 @@ export const getTrendingMoviesByDay = () =>
 export const getTrendingMoviesByWeek = () =>
 	getAuthorisedEndpoint(`${API.TRENDING}${API.MOVIE}${API.WEEK}`);
 
+export const getTrendingPersonByWeekEndpoint = () =>
+	getAuthorisedEndpoint(`${API.TRENDING}${API.PERSON}${API.WEEK}`);
+
+export const getTrendingTvByWeekEndpoint = () =>
+	getAuthorisedEndpoint(`${API.TRENDING}${API.TV}${API.WEEK}`);
+
 export const getPersonByIdEndpoint = id =>
 	getAuthorisedEndpoint(`${API.PERSON}/${id}`) + "&append_to_response=images";
 
@@ -63,3 +71,6 @@ export const getPersonCreditsByIdEndpoint = id =>
 
 export const getTvByIdEndpoint = id =>
 	getAuthorisedEndpoint(`${API.TV}/${id}`) + "&append_to_response=recommendations,credits";
+
+export const getMovieGenresEndpoint = () => getAuthorisedEndpoint(`${API.GENRES}`);
+export const getDiscoverMovieEndpoint = () => getAuthorisedEndpoint(`${API.DISCOVER_MOVIE}`);

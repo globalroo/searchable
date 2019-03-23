@@ -1,14 +1,18 @@
 import {
+	getDiscoverMovieEndpoint,
 	getMovieByIdEndpoint,
 	getMovieCastByIdEndpoint,
+	getMovieGenresEndpoint,
 	getPersonByIdEndpoint,
 	getPersonCreditsByIdEndpoint,
 	getPopularMovieEndpoint,
 	getRecommendedMoviesByIdEndpoint,
 	getSearchMovieEndpoint,
 	getSearchMultiEndpoint,
+	getTrendingPersonByWeekEndpoint,
 	getTrendingMoviesByDay,
 	getTrendingMoviesByWeek,
+	getTrendingTvByWeekEndpoint,
 	getTvByIdEndpoint
 } from "./tmdb-config";
 
@@ -107,7 +111,39 @@ export const getWeeklyTrendingMovies = async () =>
 		url: getTrendingMoviesByWeek()
 	});
 
+export const getWeeklyTrendingPeople = async () =>
+	await safeFetchJson({
+		url: getTrendingPersonByWeekEndpoint()
+	});
+
+export const getWeeklyTrendingTv = async () =>
+	await safeFetchJson({
+		url: getTrendingTvByWeekEndpoint()
+	});
+
 export const getPersonCreditsById = async id =>
 	await safeFetchJson({
 		url: getPersonCreditsByIdEndpoint(id)
 	});
+
+export const getMovieGenres = async () =>
+	await safeFetchJson({
+		url: getMovieGenresEndpoint()
+	});
+
+export const getDiscoverMoviesByGenreId = async (id, query) => {
+	const applyFilter = query
+		? query
+		: "&sort_by=popularity.desc&include_adult=false&vote_average.gte=6";
+	return await safeFetchJson({
+		url: `${getDiscoverMovieEndpoint()}${applyFilter}&with_genres=${id}`
+	});
+};
+
+// movie	Show the trending movies in the results.
+// tv	Show the trending TV shows in the results.
+// person	Show the trending people in the results.
+// Valid Time Windows
+// Time Window	Description
+// day	View the trending list for the day.
+// week	View the trending list for the week.

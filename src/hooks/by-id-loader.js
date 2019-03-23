@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 
-// Centralise byId loading / state management
+// Centralise loading / state management - optional id
 export const useByIdLoader = ({ id, fetcher }) => {
 	const [response, setResponse] = useState({});
 	const [error, setError] = useState(false);
 	const [loading, setLoading] = useState(true);
+
 	const mounted = useRef(true);
 
 	useEffect(() => {
@@ -13,7 +14,7 @@ export const useByIdLoader = ({ id, fetcher }) => {
 			if (mounted.current === false) return;
 			setError(() => false);
 			setLoading(() => true);
-			if (!response.response.ok) {
+			if (response && !response.response.ok) {
 				setError(() => true);
 			}
 			setLoading(() => false);

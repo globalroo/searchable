@@ -46,7 +46,7 @@ p {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
 }
 
 .home-wrapper>* {
@@ -59,14 +59,4 @@ p {
     .home-wrapper>* {
         margin: 0;
     }
-}
-
-.image-tile {
-    transition: transform .2s;
-    filter: drop-shadow(0 0 0.05rem black);
-}
-
-.image-tile:hover {
-    transform: scale(1.125);
-    cursor: pointer;
 }

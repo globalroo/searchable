@@ -1,0 +1,12 @@
+.genres-wrapper {
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 940px;
+}
+
+.spacer {
+    padding-bottom: 20px;
+}

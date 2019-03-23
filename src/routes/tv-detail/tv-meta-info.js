@@ -1,7 +1,9 @@
 import React from "react";
 
-import { CastMembers } from "src/components/cast-members";
+import { PersonScroller } from "src/components/person-scroller";
 import { Divider, Typography } from "@material-ui/core";
+import { NavigateBack } from "src/components/navigate-back";
+
 import TvData from "./tv-data";
 
 export const TvMetaInfo = ({ meta }) => {
@@ -19,6 +21,7 @@ export const TvMetaInfo = ({ meta }) => {
 
 	return (
 		<article className="content">
+			<NavigateBack />
 			<h1 className="bold-header-uppercase">{name}</h1>
 			<div className="content-row-1">
 				<Typography>{overview}</Typography>
@@ -35,7 +38,7 @@ export const TvMetaInfo = ({ meta }) => {
 				<>
 					<Divider />
 					<div className="content-row-2">
-						<CastMembers cast={credits.cast} />
+						<PersonScroller cast={credits.cast} />
 					</div>
 					<Divider />
 				</>

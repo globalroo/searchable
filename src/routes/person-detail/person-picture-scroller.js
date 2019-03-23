@@ -7,7 +7,8 @@ const styles = {
 	gridList: {
 		flexWrap: "nowrap",
 		transform: "translateZ(0)",
-		width: "302px"
+		width: "302px",
+		paddingTop: "3px"
 	},
 	gridListTile: {
 		width: "110px"
@@ -20,7 +21,7 @@ const PersonImage = ({ member, name, imgKey }) => {
 	const [image] = useImageLoader(getSmallPosterImage(member[`${imgKey}`]));
 	return (
 		<div style={styles.spacer}>
-			<img src={image} alt={name} style={styles.gridListTile} />
+			<img src={image} alt={name} className="undecorated-image" style={styles.gridListTile} />
 		</div>
 	);
 };

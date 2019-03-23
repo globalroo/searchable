@@ -3,8 +3,7 @@ import React from "react";
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { useImageLoader } from "src/hooks/image-loader";
 import { navigateTo } from "../helpers/navigate";
-import { GridListTile, GridListTileBar, IconButton } from "@material-ui/core";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+import { GridListTile, GridListTileBar } from "@material-ui/core";
 
 const styles = {
 	gridListTile: {
@@ -23,17 +22,10 @@ export const AssetScrollerTile = ({ asset }) => {
 		<GridListTile
 			style={styles.spacer}
 			onClick={() => navigateTo(asset)}
-			className="pointer-hover"
+			className="pointer-hover image-tile"
 		>
 			<img src={image} alt={title} style={styles.gridListTile} />
-			<GridListTileBar
-				title={title}
-				actionIcon={
-					<IconButton>
-						<StarBorderIcon />
-					</IconButton>
-				}
-			/>
+			<GridListTileBar title={title} />
 		</GridListTile>
 	);
 };

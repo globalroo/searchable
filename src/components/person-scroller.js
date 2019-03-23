@@ -20,25 +20,26 @@ const styles = {
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "nowrap",
-		transform: "translateZ(0)"
+		transform: "translateZ(0)",
+		overflowY: "hidden"
 	}
 };
 
-const CastImage = ({ id, name, profile_path }) => {
+const PersonImage = ({ id, name, profile_path }) => {
 	const [image] = useImageLoader(getSmallPosterImage(profile_path));
 	return (
 		<Link to={`/person/${id}`}>
-			<Avatar alt={name} src={image} style={styles.avatar} />
+			<Avatar alt={name} src={image} style={styles.avatar} className="avatar" />
 		</Link>
 	);
 };
 
-export const CastMembers = ({ cast }) => {
+export const PersonScroller = ({ cast }) => {
 	return (
 		<GridList style={styles.gridList}>
 			{cast.map((member, ix) => (
 				<div key={`${member.id}_${ix}_cast`} style={styles.castContainer}>
-					<CastImage
+					<PersonImage
 						name={member.name}
 						profile_path={member.profile_path}
 						id={member.id}

@@ -1,11 +1,14 @@
 import React from "react";
-import { CastMembers } from "src/components/cast-members";
+import { PersonScroller } from "src/components/person-scroller";
+import { NavigateBack } from "src/components/navigate-back";
 import { Divider, Typography } from "@material-ui/core";
+
 import { format } from "date-fns";
 
 export const MetaInfo = ({ tagline, overview, title, cast, release_date }) => (
 	<article className="content">
 		<h1 className="bold-header-uppercase">
+			<NavigateBack />
 			{title} [{format(release_date, "YYYY")}]
 		</h1>
 		<h1>{tagline}</h1>
@@ -14,7 +17,7 @@ export const MetaInfo = ({ tagline, overview, title, cast, release_date }) => (
 		</div>
 		<Divider />
 		<div className="content-row-2">
-			<CastMembers cast={cast} />
+			<PersonScroller cast={cast} />
 		</div>
 		<Divider />
 	</article>
