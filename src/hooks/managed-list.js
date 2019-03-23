@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+//TODO: Manage user recent searches via LocalStore manage via hook
 export const useManagedListHook = (initialValue = []) => {
 	const [values, setValues] = useState(initialValue);
 

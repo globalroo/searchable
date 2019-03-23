@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Downshift from "downshift";
 import { Paper } from "@material-ui/core";
 import { getSearchMultiResults } from "src/tmdb-service/tmdb-api.js";
-import { navigateTo } from "../../helpers/navigate";
+import { navigateTo } from "src/helpers/navigate";
 import { AutoCompleteItem } from "./auto-complete-item";
 import { SearchInput } from "./search-input";
 

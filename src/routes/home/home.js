@@ -1,37 +1,24 @@
 import React, { useState } from "react";
-import { AutoComplete } from "./auto-complete";
+
+import { AutoComplete } from "src/components/auto-complete";
 import { Footer } from "src/components/footer";
-import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
-import { navigateTo } from "../../helpers/navigate";
-import { TrendingSearches } from "./trending";
+import { TrendingSearches } from "src/components/trending";
+import { AssetTile } from "src/components/asset-tile";
+
 import "./home.css";
 
 export const Home = () => {
-	const [results, setResults] = useState([]);
-
-	const populate = data => {
-		setResults(data);
-	};
-
+	const [searchResults, setSearchResults] = useState([]);
+	const populate = data => setSearchResults(data);
 	return (
 		<>
 			<header className="home-header">
 				<AutoComplete populate={populate} />
 			</header>
 			<div className="home-wrapper">
-				{results.map(tile => {
-					const value = tile.name || tile.title;
-					return (
-						<div key={tile.id} className="home-panel image-tile">
-							<img
-								style={{ width: "100%" }}
-								src={getSmallPosterImage(tile.poster_path)}
-								alt={value}
-								onClick={() => navigateTo(tile)}
-							/>
-						</div>
-					);
-				})}
+				{searchResults.map(tile => (
+					<AssetTile key={tile.id} asset={tile} />
+				))}
 			</div>
 			<footer className="home-footer">
 				<TrendingSearches />

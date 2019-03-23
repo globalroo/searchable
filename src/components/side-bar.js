@@ -1,7 +1,7 @@
 import React from "react";
 
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
-import { useImageLoader } from "../hooks/image-loader";
+import { useImageLoader } from "src/hooks/image-loader";
 
 export const SideBar = ({ poster_path, title, children }) => {
 	const [image] = useImageLoader(getSmallPosterImage(poster_path));

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Avatar, GridList, Typography } from "@material-ui/core";
-import { getSmallPosterImage } from "../tmdb-service/tmdb-config";
+import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { Link } from "@reach/router";
 import { useImageLoader } from "../hooks/image-loader";
 

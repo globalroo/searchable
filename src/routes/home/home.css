@@ -23,14 +23,12 @@ p {
 .home-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .home-wrapper {
     display: grid;
     margin: 1em auto;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     grid-auto-rows: minmax(225px, auto);
 }
 
@@ -38,7 +36,7 @@ p {
     /* needed for the flex layout*/
     margin-left: 5px;
     margin-right: 5px;
-    flex: 1 1 200px;
+    flex: 1 1 130px;
 }
 
 .home-header,

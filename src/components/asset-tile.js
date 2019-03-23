@@ -2,29 +2,31 @@ import React from "react";
 
 import { getSmallPosterImage } from "src/tmdb-service/tmdb-config";
 import { useImageLoader } from "src/hooks/image-loader";
-import { navigateTo } from "../helpers/navigate";
+import { navigateTo } from "src/helpers/navigate";
 import { GridListTile, GridListTileBar } from "@material-ui/core";
 
 const styles = {
 	gridListTile: {
-		height: "225px"
+		height: "225px",
+		width: "150px"
 	},
 	spacer: { padding: "5px" }
 };
 
 export const getTitle = asset => (asset.title ? asset.title : asset.name);
 
-export const AssetScrollerTile = ({ asset }) => {
+export const AssetTile = ({ asset }) => {
 	const { poster_path } = asset;
 	const [image] = useImageLoader(getSmallPosterImage(poster_path));
 	const title = getTitle(asset);
 	return (
 		<GridListTile
-			style={styles.spacer}
+			style={{ ...styles.spacer, ...styles.gridListTile }}
 			onClick={() => navigateTo(asset)}
 			className="pointer-hover image-tile"
+			component="div"
 		>
-			<img src={image} alt={title} style={styles.gridListTile} />
+			<img src={image} alt={title} />
 			<GridListTileBar title={title} />
 		</GridListTile>
 	);

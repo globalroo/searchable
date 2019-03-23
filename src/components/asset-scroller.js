@@ -2,7 +2,7 @@ import React from "react";
 
 import "./shared.css";
 
-import { AssetScrollerTile } from "./asset-scroller-tile";
+import { AssetTile } from "./asset-tile";
 import { GridList } from "@material-ui/core";
 import { MEDIA_TYPE } from "../tmdb-service/tmdb-api";
 
@@ -27,7 +27,7 @@ export const AssetScroller = ({ assets, media_type = MEDIA_TYPE.MOVIE }) => {
 			<GridList style={styles.gridList}>
 				{assets.map((asset, ix) => {
 					const mappedAsset = asset.media_type ? asset : { ...asset, media_type };
-					return <AssetScrollerTile asset={mappedAsset} key={`${asset.id}_${ix}`} />;
+					return <AssetTile asset={mappedAsset} key={`${asset.id}_${ix}`} />;
 				})}
 			</GridList>
 		</div>
