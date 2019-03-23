@@ -7,7 +7,7 @@ import { PersonPictureScroller } from "./person-picture-scroller";
 import { SideBar } from "src/components/side-bar";
 import { Typography, Divider } from "@material-ui/core";
 import { useByIdLoader } from "../../hooks/by-id-loader";
-import { NavigateBack } from "src/components/navigate-back";
+import { NavigateBackContainer } from "src/components/navigate-back";
 
 export const PersonDetail = ({ id }) => {
 	const { response, error, loading } = useByIdLoader({ id, fetcher: getPersonById });
@@ -24,8 +24,9 @@ export const PersonDetail = ({ id }) => {
 	return (
 		<div className="wrapper">
 			<header className="header">
-				<NavigateBack />
-				{name} <Age birthday={birthday} deathday={deathday} />
+				<NavigateBackContainer>
+					{name} <Age birthday={birthday} deathday={deathday} />
+				</NavigateBackContainer>
 			</header>
 
 			<SideBar poster_path={profile_path} title={name}>
