@@ -14,10 +14,11 @@ const styles = {
 };
 
 export const getTitle = asset => (asset.title ? asset.title : asset.name);
+export const getImageSrc = asset => (asset.poster_path ? asset.poster_path : asset.profile_path);
 
 export const AssetTile = ({ asset }) => {
-	const { poster_path } = asset;
-	const [image] = useImageLoader(getSmallPosterImage(poster_path));
+	const imageSrc = getImageSrc(asset);
+	const [image] = useImageLoader(getSmallPosterImage(imageSrc));
 	const title = getTitle(asset);
 	return (
 		<GridListTile

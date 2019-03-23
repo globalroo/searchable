@@ -42,7 +42,13 @@ const SearchButton = ({ className, onSearch }) => (
 function BasicSearchInput({ classes, value, onChange, onClear, onSearch, ...props }) {
 	return (
 		<Paper className={classes.root}>
-			<InputBase className={classes.input} value={value} onChange={onChange} {...props} />
+			<InputBase
+				autoFocus={true}
+				className={classes.input}
+				value={value}
+				onChange={onChange}
+				{...props}
+			/>
 			{value.length > 0 && <ClearButton onClear={onClear} className={classes.iconButton} />}
 			<MaterialDivider className={classes.divider} />
 			<SearchButton className={classes.iconButton} onSearch={onSearch} />
