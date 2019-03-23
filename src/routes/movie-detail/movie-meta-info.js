@@ -8,13 +8,14 @@ import { format } from "date-fns";
 
 export const MetaInfo = ({ tagline, overview, title, cast, release_date }) => (
 	<article className="content">
-		<h1 className="bold-header-uppercase">
-			<NavigateBackContainer>
+		<NavigateBackContainer>
+			<h1 className="bold-header-uppercase">
 				{title} [{format(release_date, "YYYY")}]
-			</NavigateBackContainer>
-		</h1>
-		<h1>{tagline}</h1>
+			</h1>
+		</NavigateBackContainer>
+
 		<div className="content-row-1">
+			<h1>{tagline}</h1>
 			<Typography>{overview}</Typography>
 		</div>
 		<Divider />
