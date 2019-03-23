@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Close from "@material-ui/icons/Close";
-import Divider from "@material-ui/core/Divider";
+import MaterialDivider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import InputBase from "@material-ui/core/InputBase";
 import Paper from "@material-ui/core/Paper";
@@ -27,28 +27,25 @@ const styles = {
 	}
 };
 
+const ClearButton = ({ className, onClear }) => (
+	<IconButton className={className} aria-label="Clear" onClick={onClear}>
+		<Close />
+	</IconButton>
+);
+
+const SearchButton = ({ className, onSearch }) => (
+	<IconButton color="primary" className={className} aria-label="Search" onClick={onSearch}>
+		<SearchIcon />
+	</IconButton>
+);
+
 function BasicSearchInput({ classes, value, onChange, onClear, onSearch, ...props }) {
 	return (
 		<Paper className={classes.root}>
 			<InputBase className={classes.input} value={value} onChange={onChange} {...props} />
-			{value.length > 0 && (
-				<IconButton
-					className={classes.iconButton}
-					aria-label="Clear"
-					onClick={() => onClear()}
-				>
-					<Close />
-				</IconButton>
-			)}
-			<Divider className={classes.divider} />
-			<IconButton
-				color="primary"
-				className={classes.iconButton}
-				aria-label="Search"
-				onClick={onSearch}
-			>
-				<SearchIcon />
-			</IconButton>
+			{value.length > 0 && <ClearButton onClear={onClear} className={classes.iconButton} />}
+			<MaterialDivider className={classes.divider} />
+			<SearchButton className={classes.iconButton} onSearch={onSearch} />
 		</Paper>
 	);
 }

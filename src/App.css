@@ -102,8 +102,12 @@ img {
 
 .image-tile {
     transition: transform .15s;
-    filter: drop-shadow(0 0 0.05rem black);
+    filter: drop-shadow(0 0 0.07rem black);
     transform: translateZ(0);
+}
+
+.home-panel img {
+    filter: none
 }
 
 .image-tile:hover {

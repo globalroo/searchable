@@ -1,7 +1,8 @@
 import React from "react";
+import { Divider } from "src/components/divider";
 import { PersonScroller } from "src/components/person-scroller";
 import { NavigateBackContainer } from "src/components/navigate-back";
-import { Divider, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 import { format } from "date-fns";
 
