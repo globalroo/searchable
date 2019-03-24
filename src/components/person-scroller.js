@@ -28,7 +28,7 @@ const styles = {
 const PersonImage = ({ id, name, profile_path }) => {
 	const [image] = useImageLoader(getSmallPosterImage(profile_path));
 	return (
-		<Link to={`/person/${id}`}>
+		<Link to={`/searchable/person/${id}`}>
 			<Avatar alt={name} src={image} style={styles.avatar} className="avatar" />
 		</Link>
 	);

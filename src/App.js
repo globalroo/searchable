@@ -14,12 +14,12 @@ const App = () => {
 	return (
 		<>
 			<NavBar title="TMDB Endpoints and Search" />
-			<Router basepath={process.env.PUBLIC_URL}>
-				<Home path="/" />
-				<PersonDetail path="person/:id" />
-				<MovieDetail path="movie/:id" />
-				<TvDetail path="tv/:id" />
-				<PopularMoviesByGenre path="genres" />
+			<Router basepath="">
+				<Home path="/searchable" />
+				<PersonDetail path="/searchable/person/:id" />
+				<MovieDetail path="/searchable/movie/:id" />
+				<TvDetail path="/searchable/tv/:id" />
+				<PopularMoviesByGenre path="searchable/genres" />
 			</Router>
 		</>
 	);
