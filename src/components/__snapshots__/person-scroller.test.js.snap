@@ -10,7 +10,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/500"
+        href="/searchable/person/500"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -36,7 +36,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/138"
+        href="/searchable/person/138"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -62,7 +62,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/287"
+        href="/searchable/person/287"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -88,7 +88,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/6193"
+        href="/searchable/person/6193"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -114,7 +114,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/18897"
+        href="/searchable/person/18897"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -140,7 +140,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/62"
+        href="/searchable/person/62"
       >
         <div
           class="MuiAvatar-root-2 avatar"
@@ -166,7 +166,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/person/1245"
+        href="/searchable/person/1245"
       >
         <div
           class="MuiAvatar-root-2 avatar"

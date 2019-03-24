@@ -70,7 +70,7 @@ exports[`Movie Detail tests Renders a movie detail component 1`] = `
             style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
           >
             <a
-              href="/person/55536"
+              href="/searchable/person/55536"
             >
               <div
                 class="MuiAvatar-root-52 avatar"
