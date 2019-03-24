@@ -1,5 +1,6 @@
 {
 	"name": "searchable",
+	"homepage": "http://globalroo.github.io/searchable/",
 	"version": "0.1.0",
 	"private": false,
 	"dependencies": {
@@ -19,7 +20,8 @@
 		"test": "react-scripts test",
 		"coverage": "react-scripts test --coverage",
 		"codecov": "yarn test --coverage && codecov",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"deploy": "yarn run build && gh-pages -d build"
 	},
 	"husky": {
 		"hooks": {
@@ -46,6 +48,7 @@
 	],
 	"devDependencies": {
 		"codecov": "3.2.0",
+		"gh-pages": "2.0.1",
 		"husky": "1.3.1",
 		"jest-dom": "3.1.3",
 		"jest-fetch-mock": "2.1.1",
