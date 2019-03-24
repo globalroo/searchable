@@ -2,6 +2,7 @@ import React from "react";
 import { render, cleanup } from "react-testing-library";
 import { MEDIA_TYPE } from "../tmdb-service/tmdb-api";
 import { AutoCompleteItem } from "./auto-complete-item";
+import mockConsole from "jest-mock-console";
 
 import "jest-dom/extend-expect";
 const mockMovieItem = {
