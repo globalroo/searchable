@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auto complete item tests Renders an auto complete component with a movie item 1`] = `
+<div
+  class="MuiButtonBase-root-16 MuiListItem-root-4 MuiListItem-default-7 MuiListItem-gutters-12 MuiListItem-button-13 MuiMenuItem-root-1 MuiMenuItem-gutters-2"
+  data-testid="0"
+  role="menuitem"
+  tabindex="-1"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root-19"
+    focusable="false"
+    role="presentation"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+   
+  <p
+    class="MuiTypography-root-28 MuiTypography-body1-37"
+  >
+    movieItem
+  </p>
+  <span
+    class="MuiTouchRipple-root-64"
+  />
+</div>
+`;
+
+exports[`Auto complete item tests Renders an auto complete component with a person item 1`] = `
+<div
+  class="MuiButtonBase-root-156 MuiListItem-root-144 MuiListItem-default-147 MuiListItem-gutters-152 MuiListItem-button-153 MuiMenuItem-root-141 MuiMenuItem-gutters-142"
+  data-testid="2"
+  role="menuitem"
+  tabindex="-1"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root-159"
+    focusable="false"
+    role="presentation"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+   
+  <p
+    class="MuiTypography-root-168 MuiTypography-body1-177"
+  >
+    personItem
+  </p>
+  <span
+    class="MuiTouchRipple-root-204"
+  />
+</div>
+`;
+
+exports[`Auto complete item tests Renders an auto complete component with a tv item 1`] = `
+<div
+  class="MuiButtonBase-root-86 MuiListItem-root-74 MuiListItem-default-77 MuiListItem-gutters-82 MuiListItem-button-83 MuiMenuItem-root-71 MuiMenuItem-gutters-72"
+  data-testid="1"
+  role="menuitem"
+  tabindex="-1"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root-89"
+    focusable="false"
+    role="presentation"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"
+    />
+  </svg>
+   
+  <p
+    class="MuiTypography-root-98 MuiTypography-body1-107"
+  >
+    tvItem
+  </p>
+  <span
+    class="MuiTouchRipple-root-134"
+  />
+</div>
+`;

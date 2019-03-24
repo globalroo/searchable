@@ -6,13 +6,6 @@ import { MEDIA_TYPE } from "src/tmdb-service/tmdb-api";
 import { navigateTo } from "src/helpers/navigate";
 import { useImageLoader } from "src/hooks/image-loader";
 
-const styles = {
-	avatar: {
-		width: 70,
-		height: 70
-	}
-};
-
 export const TvCreatorList = ({ id, name, profile_path }) => {
 	const [image] = useImageLoader(getSmallPosterImage(profile_path));
 	return (
@@ -20,6 +13,7 @@ export const TvCreatorList = ({ id, name, profile_path }) => {
 			key={id}
 			alignItems="center"
 			className={"pointer-hover"}
+			data-testid={`tv-creator-${id}`}
 			onClick={() => navigateTo({ media_type: MEDIA_TYPE.PERSON, id })}
 		>
 			<ListItemAvatar>
@@ -28,4 +22,11 @@ export const TvCreatorList = ({ id, name, profile_path }) => {
 			<ListItemText primary={name} />
 		</ListItem>
 	);
+};
+
+const styles = {
+	avatar: {
+		width: 70,
+		height: 70
+	}
 };

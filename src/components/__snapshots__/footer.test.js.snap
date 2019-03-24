@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Tile tests Renders the example Footer with some test links 1`] = `
+<div>
+  <footer
+    class="small-text"
+  >
+    <h5>
+      Examples:
+    </h5>
+    <hr />
+    <a
+      href="/movie/299536"
+    >
+      Deep link Movie
+    </a>
+     |
+     
+    <a
+      href="/person/60073"
+    >
+      Deep link Alive Actor
+    </a>
+     |
+     
+    <a
+      href="/person/194"
+    >
+      Deep link Deceased Actor
+    </a>
+     |
+     
+    <a
+      href="/tv/1399"
+    >
+      Deep link TV
+    </a>
+     |
+     
+    <a
+      href="/genres"
+    >
+      Most popular movies by Genre
+    </a>
+  </footer>
+</div>
+`;

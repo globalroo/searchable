@@ -24,10 +24,11 @@ const styles = {
 export const AssetScroller = ({ assets, media_type = MEDIA_TYPE.MOVIE }) => {
 	return (
 		<div style={styles.root}>
-			<GridList style={styles.gridList}>
+			<GridList data-testid="asset-grid" style={styles.gridList}>
 				{assets.map((asset, ix) => {
 					const mappedAsset = asset.media_type ? asset : { ...asset, media_type };
-					return <AssetTile asset={mappedAsset} key={`${asset.id}_${ix}`} />;
+					const key = `${asset.id}_${asset.media_type}_${ix}`;
+					return <AssetTile asset={mappedAsset} key={key} data-testid={key} />;
 				})}
 			</GridList>
 		</div>

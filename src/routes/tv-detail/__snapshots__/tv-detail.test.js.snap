@@ -1,3 +1,872 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TV Detail tests Renders a TV detail component 1`] = `null`;
+exports[`TV Detail tests Renders a TV detail component 1`] = `
+<div
+  class="wrapper"
+>
+  <aside
+    class="sidebar"
+  >
+    <img
+      alt="Game of Thrones"
+      src="http://image.tmdb.org/t/p/w300//gwPSoYUHAKmdyVywgLpKKA4BjRr.jpg"
+    />
+    <ul
+      class="MuiList-root-1 MuiList-dense-3 MuiList-padding-2 MuiList-subheader-4"
+    >
+      <div
+        class="MuiListSubheader-root-5 MuiListSubheader-sticky-10 MuiListSubheader-gutters-8"
+      >
+        Creators:
+      </div>
+      <li
+        class="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-dense-15 MuiListItem-gutters-19 pointer-hover"
+        data-testid="tv-creator-9813"
+      >
+        <div
+          class="MuiAvatar-root-26 MuiListItemAvatar-root-23"
+          style="width: 70px; height: 70px;"
+        >
+          <img
+            alt="name"
+            class="MuiAvatar-img-28"
+            src="http://image.tmdb.org/t/p/w300//8CuuNIKMzMUL1NKOPv9AqEwM7og.jpg"
+          />
+        </div>
+        <div
+          class="MuiListItemText-root-29 MuiListItemText-dense-31"
+        >
+          <span
+            class="MuiTypography-root-35 MuiTypography-subheading-42 MuiListItemText-primary-32 MuiListItemText-textDense-34"
+          >
+            David Benioff
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root-11 MuiListItem-default-14 MuiListItem-dense-15 MuiListItem-gutters-19 pointer-hover"
+        data-testid="tv-creator-228068"
+      >
+        <div
+          class="MuiAvatar-root-26 MuiListItemAvatar-root-23"
+          style="width: 70px; height: 70px;"
+        >
+          <img
+            alt="name"
+            class="MuiAvatar-img-28"
+            src="http://image.tmdb.org/t/p/w300//caUAtilEe06OwOjoQY3B7BgpARi.jpg"
+          />
+        </div>
+        <div
+          class="MuiListItemText-root-29 MuiListItemText-dense-31"
+        >
+          <span
+            class="MuiTypography-root-35 MuiTypography-subheading-42 MuiListItemText-primary-32 MuiListItemText-textDense-34"
+          >
+            D. B. Weiss
+          </span>
+        </div>
+      </li>
+    </ul>
+  </aside>
+  <article
+    class="content"
+  >
+    <div
+      class="pointer-hover"
+      style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start;"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-71"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+        />
+      </svg>
+      <h1
+        class="bold-header-uppercase"
+      >
+        Game of Thrones
+      </h1>
+    </div>
+    <div
+      class="content-row-1"
+    >
+      <p
+        class="MuiTypography-root-35 MuiTypography-body1-44"
+      >
+        Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.
+      </p>
+      <div
+        class="MuiPaper-root-81 MuiPaper-elevation2-85 MuiPaper-rounded-82 SimpleTvData-root-80"
+      >
+        <table
+          class="MuiTable-root-108"
+        >
+          <tbody
+            class="MuiTableBody-root-109"
+          >
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                Number of Episodes
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                73
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                Seasons
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                8
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                Episode Length
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                about 1 hour
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                First aired:
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                Sunday 17th April 2011
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                Last Aired:
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                Sunday 27th August 2017
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root-110"
+            >
+              <th
+                class="MuiTableCell-root-115 MuiTableCell-body-117"
+                scope="row"
+              >
+                Status
+              </th>
+              <td
+                class="MuiTableCell-root-115 MuiTableCell-body-117 MuiTableCell-alignRight-125"
+              >
+                Returning Series
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root-127"
+    />
+    <div
+      class="content-row-2"
+    >
+      <ul
+        class="MuiGridList-root-132"
+        style="margin: -2px; display: flex; flex-direction: row; flex-wrap: nowrap; transform: translateZ(0); overflow-y: hidden;"
+      >
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1223786"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Emilia Clarke"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//j7d083zIMhwnKro3tQqDz2Fq1UD.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Emilia Clarke
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Daenerys Targaryen
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/239019"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Kit Harington"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//4MqUjb1SYrzHmFSyGiXnlZWLvBs.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Kit Harington
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Jon Snow
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/22970"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Peter Dinklage"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//xuB7b4GbARu4HN6gq5zMqjGbkwF.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Peter Dinklage
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Tyrion Lannister
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/17286"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Lena Headey"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//wcpy6J7KLzmVt0METboX3CZ0Jp.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Lena Headey
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Cersei Lannister
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/12795"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Nikolaj Coster-Waldau"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//3xv7t3Uyx4RNLB8MnPQMIhuRV9V.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Nikolaj Coster-Waldau
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Jaime Lannister
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1001657"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Sophie Turner"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//ed4ajSYdv49j9OF7yMeG8Hznrrt.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Sophie Turner
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Sansa Stark
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1181313"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Maisie Williams"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//oLlWSLO7e8QeI1nQfMzXoCIJsxs.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Maisie Williams
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Arya Stark
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/20508"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Iain Glen"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//vYEI5xJWJ6HKjPusvO2klAvez3J.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Iain Glen
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Jorah Mormont
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/15498"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Liam Cunningham"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//8RMX0M8AEaldVAC6WUJIViUdDkm.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Liam Cunningham
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Davos Seaworth
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1010135"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="John Bradley"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//yrRfy2LUab8i6bjEb0LFEe0wDK2.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            John Bradley
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Samwell Tarly
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/84423"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Conleth Hill"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//nxSh1w1MTyAfQ1cCSie3HtjQot6.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Conleth Hill
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Varys
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1011904"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Gwendoline Christie"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//kmlv5i02n3zKryBr2W3kSeWVKTD.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Gwendoline Christie
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Brienne of Tarth
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/239020"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Isaac Hempstead-Wright"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//qF1Ca4aNDkpSGQt9Q7qfpRbwNOk.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Isaac Hempstead-Wright
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Bran Stark
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1251069"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Nathalie Emmanuel"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//yYiJwunH04doOZJgMu7qTZyrRYJ.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Nathalie Emmanuel
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Missandei
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/964792"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Jacob Anderson"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//kCvEYSYeUk6aPh2sE8VExaTRYWP.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Jacob Anderson
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Grey Worm
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/195930"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Jerome Flynn"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//nW9wUciHIkTt0jrw07uuQUWtVnm.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Jerome Flynn
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Bronn
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/3075"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Rory McCann"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//zYNJIN6fEXAkLz2APQduYxvGxI1.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Rory McCann
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Sandor Clegane
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/213395"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Hannah Murray"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//9Qob0EzmUG8WuM5XmkD0mN2ZJUp.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Hannah Murray
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Gilly
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/72315"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Ben Crompton"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//cpNhGGZq5lG4tWfVIpggor4BeAF.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Ben Crompton
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Eddison Tollett
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1034702"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Daniel Portman"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//7xhx2qqfaHc7ZUvFCzCUbaVyClv.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Daniel Portman
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Podrick Payne
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/570296"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Joe Dempsie"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//9NSZbZ9yqeoFrt77mGZl3KFvhDk.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Joe Dempsie
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Gendry
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/23229"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Carice van Houten"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300//u6iV3URlvP8P7bjFE8AMScsk8pW.jpg"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Carice van Houten
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Melisandre
+          </span>
+        </div>
+        <div
+          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        >
+          <a
+            href="/person/1369307"
+          >
+            <div
+              class="MuiAvatar-root-26 avatar"
+              style="width: 80px; height: 80px; margin: 10px;"
+            >
+              <img
+                alt="Hafþór Júlíus Björnsson"
+                class="MuiAvatar-img-28"
+                src="http://image.tmdb.org/t/p/w300/null"
+              />
+            </div>
+          </a>
+          <p
+            class="MuiTypography-root-35 MuiTypography-body1-44 MuiTypography-alignCenter-58"
+          >
+            Hafþór Júlíus Björnsson
+          </p>
+          <span
+            class="MuiTypography-root-35 MuiTypography-caption-45 MuiTypography-alignCenter-58"
+          >
+            Gregor Clegane
+          </span>
+        </div>
+      </ul>
+    </div>
+    <hr
+      class="MuiDivider-root-127"
+    />
+  </article>
+</div>
+`;

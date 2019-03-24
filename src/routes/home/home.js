@@ -10,6 +10,7 @@ import "./home.css";
 export const Home = () => {
 	const [searchResults, setSearchResults] = useState([]);
 	const populate = data => setSearchResults(data);
+
 	return (
 		<>
 			<header className="home-header">

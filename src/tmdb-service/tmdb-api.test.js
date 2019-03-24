@@ -1,9 +1,12 @@
 import {
 	defaultFailResponse,
 	getDailyTrendingMovies,
+	getDiscoverMoviesByGenreId,
 	getMovieById,
 	getMovieCastById,
+	getMovieGenres,
 	getPersonById,
+	getPersonCreditsById,
 	getPopularMovies,
 	getRecommendedMoviesById,
 	getSearchMovieTitleResults,
@@ -170,6 +173,42 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(
 				`"https://api.themoviedb.org/3/tv/1?api_key=test-key&append_to_response=recommendations,credits"`
+			);
+		});
+		it("getPersonCreditsById, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getPersonCreditsById(1);
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/person/1/combined_credits?api_key=test-key"`
+			);
+		});
+		it("getMovieGenres, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getMovieGenres();
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/genre/movie/list?api_key=test-key"`
+			);
+		});
+		it("getDiscoverMoviesByGenreId without query, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getDiscoverMoviesByGenreId(1);
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/discover/movie?api_key=test-key&sort_by=popularity.desc&include_adult=false&vote_average.gte=6&with_genres=1"`
+			);
+		});
+		it("getDiscoverMoviesByGenreId WITH query, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getDiscoverMoviesByGenreId(1, `&myQuery=test`);
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/discover/movie?api_key=test-key&myQuery=test&with_genres=1"`
 			);
 		});
 	});

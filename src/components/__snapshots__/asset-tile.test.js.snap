@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Tile tests Renders an AssetScroller component with a non-default media type 1`] = `
+<div
+  class="MuiGridListTile-root-16 pointer-hover image-tile"
+  data-testid="226486_person_name"
+  style="padding: 5px; height: 225px; width: 150px;"
+>
+  <div
+    class="MuiGridListTile-tile-17"
+  >
+    <img
+      alt="person_name"
+      src="http://image.tmdb.org/t/p/w300/Person type tile"
+    />
+    <div
+      class="MuiGridListTileBar-root-20 MuiGridListTileBar-titlePositionBottom-21"
+    >
+      <div
+        class="MuiGridListTileBar-titleWrap-24"
+      >
+        <div
+          class="MuiGridListTileBar-title-27"
+        >
+          person_name
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Asset Tile tests Renders an AssetTile component 1`] = `
+<div
+  class="MuiGridListTile-root-1 pointer-hover image-tile"
+  data-testid="226486_Tammy"
+  style="padding: 5px; height: 225px; width: 150px;"
+>
+  <div
+    class="MuiGridListTile-tile-2"
+  >
+    <img
+      alt="Tammy"
+      src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+    />
+    <div
+      class="MuiGridListTileBar-root-5 MuiGridListTileBar-titlePositionBottom-6"
+    >
+      <div
+        class="MuiGridListTileBar-titleWrap-9"
+      >
+        <div
+          class="MuiGridListTileBar-title-12"
+        >
+          Tammy
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -9,9 +9,14 @@ import { getMovieGenres } from "src/tmdb-service/tmdb-api";
 
 import "./genres.css";
 
-const GenreCategory = ({ id, name }) => {
+export const GenreCategory = ({ id, name }) => {
 	return (
-		<CategoryLoader fetcher={getDiscoverMoviesByGenreId} title={name} id={id}>
+		<CategoryLoader
+			fetcher={getDiscoverMoviesByGenreId}
+			title={name}
+			id={id}
+			data-testid={`genre-category-${id}`}
+		>
 			{results => (
 				<div className="spacer">
 					<AssetScroller assets={results} />
@@ -27,6 +32,7 @@ export const PopularMoviesByGenre = () => {
 	useEffect(() => {
 		getMovieGenres().then(({ payload }) => {
 			const { genres } = payload;
+			console.log(genres);
 			setGenres(genres);
 		});
 	}, []);

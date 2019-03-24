@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Tile tests Renders a Category loader component and passes the data through to it's children 1`] = `
+<div>
+  <h1>
+    Data test
+  </h1>
+  <div
+    data-testid="result-data"
+  >
+    {"results":[{"id":0,"title":"movieItem","media_type":"movie"},{"id":1,"title":"tvItem","media_type":"tv"},{"id":2,"name":"personItem","media_type":"person"}]}
+  </div>
+</div>
+`;
+
+exports[`Asset Tile tests Renders a Category loader component and safely renders if no data in the response 1`] = `
+<div>
+  <h1>
+    Data test
+  </h1>
+  <div
+    data-testid="result-data"
+  >
+    {"results":[]}
+  </div>
+</div>
+`;
+
+exports[`Asset Tile tests Renders a Category loader component in a loading state 1`] = `null`;
+
+exports[`Asset Tile tests Renders a Category loader component in an error state 1`] = `
+<div>
+  Can't load Category: 
+  Error test
+</div>
+`;

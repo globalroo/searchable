@@ -26,6 +26,7 @@ export const AssetTile = ({ asset }) => {
 			onClick={() => navigateTo(asset)}
 			className="pointer-hover image-tile"
 			component="div"
+			data-testid={`${asset.id}_${title}`}
 		>
 			<img src={image} alt={title} />
 			<GridListTileBar title={title} />

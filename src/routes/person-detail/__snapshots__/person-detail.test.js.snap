@@ -1,3 +1,521 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Person Detail tests Renders a Person detail component 1`] = `null`;
+exports[`Person Detail tests Renders a Person detail component 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <header
+      class="header"
+    >
+      <div
+        class="pointer-hover"
+        style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start;"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root-1"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+          />
+        </svg>
+        Tom Cruise
+      </div>
+      <div
+        style="display: flex; flex-direction: row; align-items: center; font-size: smaller;"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root-1"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"
+          />
+        </svg>
+        Tuesday 3rd July 1962
+         - 
+         (
+        56
+         years old)
+      </div>
+    </header>
+    <aside
+      class="sidebar"
+    >
+      <img
+        alt="Tom Cruise"
+        src="http://image.tmdb.org/t/p/w300//2Dkx4uuGoWFrPSitxdikv9z5azR.jpg"
+      />
+      <div
+        class="MuiGridList-root-10"
+        style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); width: 302px; padding-top: 3px;"
+      >
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//nPGebm4wxlLThpEEjTKthjoHMbM.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//hIVsySa8Ro6vrQ0hygIF6ylBgK7.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//fttvtGtgjPjoKEqGtnebbwEkVNA.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//hOoTazc5VZdXvMTLGpu9H7nb1e7.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//54wOvUh3vWOTDqPMDq1VTYuh9yv.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//2Dkx4uuGoWFrPSitxdikv9z5azR.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//s57wicK5nPuYhglUFUWECjnomJL.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//9pTIJwjH3Wg8JAxt0TNTpu0cXK0.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//gThaIXgpCm3PCiXwFNDBJCme85y.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//bn9CwMSM3o4XPZEPZdQ3grslGup.jpg"
+            style="width: 110px;"
+          />
+        </div>
+      </div>
+    </aside>
+    <article
+      class="content"
+    >
+      <h1
+        class="bold-header-uppercase"
+      >
+        Biography
+      </h1>
+      <hr
+        class="MuiDivider-root-11"
+      />
+      <br />
+      <div
+        class="content-row-1"
+      >
+        <p
+          class="MuiTypography-root-16 MuiTypography-body1-25"
+        >
+          Thomas "Tom" Cruise (born Thomas Cruise Mapother IV; July 3, 1962) is an American actor and filmmaker. He has been nominated for three Academy Awards and has won three Golden Globe Awards.
+
+He started his career at age 19 in the 1981 film Endless Love. After portraying supporting roles in Taps (1981) and The Outsiders (1983), his first leading role was in Risky Business, released in August 1983. Cruise became a full-fledged movie star after starring as Pete "Maverick" Mitchell in Top Gun (1986). He has since 1996 been well known for his role as secret agent Ethan Hunt in the Mission: Impossible film series. One of the biggest movie stars in Hollywood, Cruise has starred in many successful films, including The Color of Money (1986), Cocktail (1988), Rain Man (1988), Born on the Fourth of July (1989), Far and Away(1992), A Few Good Men (1992), The Firm (1993), Interview with the Vampire: The Vampire Chronicles (1994), Jerry Maguire (1996), Eyes Wide Shut (1999), Magnolia (1999), Vanilla Sky (2001), Minority Report (2002),The Last Samurai (2003), Collateral (2004), War of the Worlds (2005), Lions for Lambs (2007), Valkyrie (2008), Knight and Day (2010), Jack Reacher (2012), Oblivion (2013), and Edge of Tomorrow (2014).
+
+In 2012, Cruise was Hollywood's highest-paid actor. Fifteen of his films grossed over $100 million domestically; twenty-one have grossed in excess of $200 million worldwide. Cruise is known for his support for the Church of Scientology and its affiliated social programs.
+        </p>
+      </div>
+      <br />
+      <hr
+        class="MuiDivider-root-11"
+      />
+      <br />
+      <div
+        class="content-row-2"
+      >
+        <h1>
+          Other Credits
+        </h1>
+        <div
+          style="display: flex; flex-wrap: wrap; justify-content: space-between; overflow: hidden;"
+        >
+          <ul
+            class="MuiGridList-root-10"
+            data-testid="asset-grid"
+            style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); padding-top: 3px; padding-bottom: 3px;"
+          >
+            <div
+              class="MuiGridListTile-root-52 pointer-hover image-tile"
+              data-testid="74_War of the Worlds"
+              style="padding: 5px; height: 225px; width: 150px;"
+            >
+              <div
+                class="MuiGridListTile-tile-53"
+              >
+                <img
+                  alt="War of the Worlds"
+                  src="http://image.tmdb.org/t/p/w300//xXMM9KY2eq1SDOQif9zO91YOBA8.jpg"
+                />
+                <div
+                  class="MuiGridListTileBar-root-56 MuiGridListTileBar-titlePositionBottom-57"
+                >
+                  <div
+                    class="MuiGridListTileBar-titleWrap-60"
+                  >
+                    <div
+                      class="MuiGridListTileBar-title-63"
+                    >
+                      War of the Worlds
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`Person Detail tests Renders a Person detail component with no biography 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <header
+      class="header"
+    >
+      <div
+        class="pointer-hover"
+        style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start;"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root-1"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+          />
+        </svg>
+        Tom Cruise
+      </div>
+      <div
+        style="display: flex; flex-direction: row; align-items: center; font-size: smaller;"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root-1"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"
+          />
+        </svg>
+        Tuesday 3rd July 1962
+         - 
+         (
+        56
+         years old)
+      </div>
+    </header>
+    <aside
+      class="sidebar"
+    >
+      <img
+        alt="Tom Cruise"
+        src="http://image.tmdb.org/t/p/w300//2Dkx4uuGoWFrPSitxdikv9z5azR.jpg"
+      />
+      <div
+        class="MuiGridList-root-10"
+        style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); width: 302px; padding-top: 3px;"
+      >
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//nPGebm4wxlLThpEEjTKthjoHMbM.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//hIVsySa8Ro6vrQ0hygIF6ylBgK7.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//fttvtGtgjPjoKEqGtnebbwEkVNA.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//hOoTazc5VZdXvMTLGpu9H7nb1e7.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//54wOvUh3vWOTDqPMDq1VTYuh9yv.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//2Dkx4uuGoWFrPSitxdikv9z5azR.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//s57wicK5nPuYhglUFUWECjnomJL.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//9pTIJwjH3Wg8JAxt0TNTpu0cXK0.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//gThaIXgpCm3PCiXwFNDBJCme85y.jpg"
+            style="width: 110px;"
+          />
+        </div>
+        <div
+          style="padding: 2px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="undecorated-image"
+            src="http://image.tmdb.org/t/p/w300//bn9CwMSM3o4XPZEPZdQ3grslGup.jpg"
+            style="width: 110px;"
+          />
+        </div>
+      </div>
+    </aside>
+    <article
+      class="content"
+    >
+      <h1
+        class="bold-header-uppercase"
+      >
+        Biography
+      </h1>
+      <hr
+        class="MuiDivider-root-11"
+      />
+      <br />
+      <div
+        class="content-row-1"
+      >
+        <p
+          class="MuiTypography-root-16 MuiTypography-body1-25"
+        >
+          No biography
+        </p>
+      </div>
+      <br />
+      <hr
+        class="MuiDivider-root-11"
+      />
+      <br />
+      <div
+        class="content-row-2"
+      >
+        <h1>
+          Other Credits
+        </h1>
+        <div
+          style="display: flex; flex-wrap: wrap; justify-content: space-between; overflow: hidden;"
+        >
+          <ul
+            class="MuiGridList-root-10"
+            data-testid="asset-grid"
+            style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); padding-top: 3px; padding-bottom: 3px;"
+          >
+            <div
+              class="MuiGridListTile-root-52 pointer-hover image-tile"
+              data-testid="74_War of the Worlds"
+              style="padding: 5px; height: 225px; width: 150px;"
+            >
+              <div
+                class="MuiGridListTile-tile-53"
+              >
+                <img
+                  alt="War of the Worlds"
+                  src="http://image.tmdb.org/t/p/w300//xXMM9KY2eq1SDOQif9zO91YOBA8.jpg"
+                />
+                <div
+                  class="MuiGridListTileBar-root-56 MuiGridListTileBar-titlePositionBottom-57"
+                >
+                  <div
+                    class="MuiGridListTileBar-titleWrap-60"
+                  >
+                    <div
+                      class="MuiGridListTileBar-title-63"
+                    >
+                      War of the Worlds
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`Person Detail tests Renders a Person detail error component 1`] = `
+<div>
+  <div>
+    Error
+  </div>
+</div>
+`;
+
+exports[`Person Detail tests Renders a Person detail error component 2`] = `<div />`;
+
+exports[`Person Detail tests Renders a Person detail loading component 1`] = `<div />`;

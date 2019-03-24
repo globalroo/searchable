@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] = `
+<div>
+  <ul
+    class="MuiGridList-root-1"
+    style="margin: -2px; display: flex; flex-direction: row; flex-wrap: nowrap; transform: translateZ(0); overflow-y: hidden;"
+  >
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/500"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Tom Cruise"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//2Dkx4uuGoWFrPSitxdikv9z5azR.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Tom Cruise
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/138"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Quentin Tarantino"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//rivHScdhT043n5jCSci7ToqLsoE.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Quentin Tarantino
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/287"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Brad Pitt"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//kU3B75TyRiCgE270EyZnHjfivoq.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Brad Pitt
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/6193"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Leonardo DiCaprio"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//jqbqNrOIB3alGMX6Gh2MbOKMXZO.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Leonardo DiCaprio
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/18897"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Jackie Chan"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//pmKJ4sGvPQ3imzXaFnjW4Vk5Gyc.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Jackie Chan
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/62"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Bruce Willis"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//zoTPQXh3qLd0Nj8JCVZqdWowQw7.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Bruce Willis
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+    <div
+      style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+    >
+      <a
+        href="/person/1245"
+      >
+        <div
+          class="MuiAvatar-root-2 avatar"
+          style="width: 80px; height: 80px; margin: 10px;"
+        >
+          <img
+            alt="Scarlett Johansson"
+            class="MuiAvatar-img-4"
+            src="http://image.tmdb.org/t/p/w300//tHMgW7Pg0Fg6HmB8Kh8Ixk6yxZw.jpg"
+          />
+        </div>
+      </a>
+      <p
+        class="MuiTypography-root-5 MuiTypography-body1-14 MuiTypography-alignCenter-28"
+      >
+        Scarlett Johansson
+      </p>
+      <span
+        class="MuiTypography-root-5 MuiTypography-caption-15 MuiTypography-alignCenter-28"
+      />
+    </div>
+  </ul>
+</div>
+`;

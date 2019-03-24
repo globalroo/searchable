@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selecting a creator avatar routes to their profile Renders a tv-creator-list component 1`] = `
+<li
+  class="MuiListItem-root-1 MuiListItem-default-4 MuiListItem-dense-5 MuiListItem-gutters-9 pointer-hover"
+  data-testid="tv-creator-1"
+>
+  <div
+    class="MuiAvatar-root-16"
+    style="width: 70px; height: 70px;"
+  >
+    <img
+      alt="name"
+      class="MuiAvatar-img-18"
+      src="http://image.tmdb.org/t/p/w300/testprofile"
+    />
+  </div>
+  <div
+    class="MuiListItemText-root-19"
+  >
+    <span
+      class="MuiTypography-root-25 MuiTypography-subheading-32 MuiListItemText-primary-22"
+    >
+      test
+    </span>
+  </div>
+</li>
+`;

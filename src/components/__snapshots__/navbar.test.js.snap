@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] = `
+<div>
+  <header
+    class="MuiPaper-root-10 MuiPaper-elevation4-16 MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorPrimary-8"
+    style="background: black;"
+  >
+    <div
+      class="MuiToolbar-root-37 MuiToolbar-regular-39 MuiToolbar-gutters-38"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        style="color: white; text-decoration: none;"
+      >
+        <div
+          style="display: flex; flex-direction: row; align-items: center;"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root-41"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+           
+          <h2
+            class="MuiTypography-root-50 MuiTypography-title-56"
+            style="color: white;"
+          >
+            Test Title
+          </h2>
+        </div>
+      </a>
+    </div>
+  </header>
+</div>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset Scroller tests Renders an AssetScroller and overrides the media type if specified 1`] = `
+<ul
+  class="MuiGridList-root-17"
+  data-testid="asset-grid"
+  style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); padding-top: 3px; padding-bottom: 3px;"
+>
+  <div
+    class="MuiGridListTile-root-18 pointer-hover image-tile"
+    data-testid="226486_Tammy"
+    style="padding: 5px; height: 225px; width: 150px;"
+  >
+    <div
+      class="MuiGridListTile-tile-19"
+    >
+      <img
+        alt="Tammy"
+        src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+      />
+      <div
+        class="MuiGridListTileBar-root-22 MuiGridListTileBar-titlePositionBottom-23"
+      >
+        <div
+          class="MuiGridListTileBar-titleWrap-26"
+        >
+          <div
+            class="MuiGridListTileBar-title-29"
+          >
+            Tammy
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ul>
+`;
+
+exports[`Asset Scroller tests Renders an AssetScroller component 1`] = `
+<ul
+  class="MuiGridList-root-1"
+  data-testid="asset-grid"
+  style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); padding-top: 3px; padding-bottom: 3px;"
+>
+  <div
+    class="MuiGridListTile-root-2 pointer-hover image-tile"
+    data-testid="226486_Tammy"
+    style="padding: 5px; height: 225px; width: 150px;"
+  >
+    <div
+      class="MuiGridListTile-tile-3"
+    >
+      <img
+        alt="Tammy"
+        src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+      />
+      <div
+        class="MuiGridListTileBar-root-6 MuiGridListTileBar-titlePositionBottom-7"
+      >
+        <div
+          class="MuiGridListTileBar-titleWrap-10"
+        >
+          <div
+            class="MuiGridListTileBar-title-13"
+          >
+            Tammy
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ul>
+`;

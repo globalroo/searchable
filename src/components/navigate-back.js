@@ -1,15 +1,6 @@
 import React from "react";
 import { ArrowBack } from "@material-ui/icons";
 
-const styles = {
-	container: {
-		display: "flex",
-		flexDirection: "row",
-		alignItems: "flex-start",
-		justifyContent: "flex-start"
-	}
-};
-
 export const NavigateBackContainer = ({ children }) => {
 	return (
 		<div
@@ -21,4 +12,13 @@ export const NavigateBackContainer = ({ children }) => {
 			{children}
 		</div>
 	);
+};
+
+const styles = {
+	container: {
+		display: "flex",
+		flexDirection: "row",
+		alignItems: "flex-start",
+		justifyContent: "flex-start"
+	}
 };

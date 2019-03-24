@@ -4,3 +4,5 @@ package.json
 README.md
 *html
 *.css
+*.snap.*
+*.json

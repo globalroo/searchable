@@ -139,11 +139,3 @@ export const getDiscoverMoviesByGenreId = async (id, query) => {
 		url: `${getDiscoverMovieEndpoint()}${applyFilter}&with_genres=${id}`
 	});
 };
-
-// movie	Show the trending movies in the results.
-// tv	Show the trending TV shows in the results.
-// person	Show the trending people in the results.
-// Valid Time Windows
-// Time Window	Description
-// day	View the trending list for the day.
-// week	View the trending list for the week.

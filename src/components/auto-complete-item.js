@@ -13,12 +13,12 @@ const getAutoCompleteItemIcon = media_type => {
 		case MEDIA_TYPE.PERSON:
 			return <Person />;
 		default:
-			return null;
+			throw new Error("Cannot handle this media type");
 	}
 };
 
 export const AutoCompleteItem = ({ item, index, highlighted, selected, ...props }) => (
-	<MenuItem {...props} selected={highlighted} component="div">
+	<MenuItem {...props} selected={highlighted} component="div" data-testid={`${item.id}`}>
 		{getAutoCompleteItemIcon(item.media_type)}&nbsp;
 		<Typography>{`${item.title || item.name}`}</Typography>
 	</MenuItem>

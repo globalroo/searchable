@@ -3,6 +3,7 @@ import {
 	BASE_IMG_PATH,
 	BASE_URL,
 	getAuthorisedEndpoint,
+	getLargeImage,
 	getMovieByIdEndpoint,
 	getMovieCastByIdEndpoint,
 	getPersonByIdEndpoint,
@@ -30,7 +31,9 @@ describe("Verify endpoints", () => {
 	});
 	it("Verify getMovieCastByIdEndpoint returns expected URL", () => {
 		const testId = "1";
-		expect(getMovieCastByIdEndpoint(1)).toContain(`${BASE_URL}${API.MOVIE}/${testId}${API.CREDITS}`);
+		expect(getMovieCastByIdEndpoint(1)).toContain(
+			`${BASE_URL}${API.MOVIE}/${testId}${API.CREDITS}`
+		);
 	});
 	it("Verify getPersonByIdEndpoint returns expected URL", () => {
 		const testId = "1";
@@ -66,6 +69,10 @@ describe("Verify endpoints", () => {
 	});
 	it("Verify getTrendingMoviesByWeek returns expected URL", () => {
 		const endpoint = getTrendingMoviesByWeek();
+		expect(endpoint).toMatchSnapshot();
+	});
+	it("Formats the large image url correctly", () => {
+		const endpoint = getLargeImage("test.png");
 		expect(endpoint).toMatchSnapshot();
 	});
 });

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component tests Renders a home with data component 1`] = `
+<div>
+  <header
+    class="home-header"
+  >
+    <button
+      data-testid="clicker"
+    />
+  </header>
+  <div
+    class="home-wrapper"
+  >
+    <div
+      data-testid="test"
+    >
+      {"id":0}
+    </div>
+    <div
+      data-testid="test"
+    >
+      {"id":1}
+    </div>
+  </div>
+  <footer
+    class="home-footer"
+  >
+    <div>
+      Trending Searches
+    </div>
+    <div>
+      Footer
+    </div>
+  </footer>
+</div>
+`;

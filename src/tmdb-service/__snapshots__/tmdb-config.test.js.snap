@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Verify endpoints Formats the large image url correctly 1`] = `"http://image.tmdb.org/t/p/w1280/test.png"`;
+
 exports[`Verify endpoints Verify getTrendingMoviesByDay returns expected URL 1`] = `"https://api.themoviedb.org/3/trending/movie/day?api_key=test-key"`;
 
 exports[`Verify endpoints Verify getTrendingMoviesByWeek returns expected URL 1`] = `"https://api.themoviedb.org/3/trending/movie/week?api_key=test-key"`;

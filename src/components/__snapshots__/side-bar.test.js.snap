@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar Renders as expected Renders a component with a navigate back wrapper 1`] = `
+<div>
+  <aside
+    class="sidebar"
+  >
+    <img
+      alt="image holder"
+      src="http://image.tmdb.org/t/p/w300/test_image.png"
+    />
+    <p>
+      Test children render
+    </p>
+  </aside>
+</div>
+`;

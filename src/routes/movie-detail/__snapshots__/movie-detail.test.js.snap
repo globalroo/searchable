@@ -1,150 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Movie Detail tests Renders a movie detail component 1`] = `
-<div
-  class="wrapper"
->
-  <aside
-    class="sidebar"
+<div>
+  <div
+    class="wrapper"
   >
-    <img
-      alt="Tammy"
-    />
-  </aside>
-  <article
-    class="content"
-  >
-    <h1
-      class="bold-header-uppercase"
+    <aside
+      class="sidebar"
     >
-      Tammy
-       [
-      2014
-      ]
-    </h1>
-    <h1>
-      She hit the road. The road hit back.
-    </h1>
-    <div
-      class="content-row-1"
+      <img
+        alt="Tammy"
+        src="http://image.tmdb.org/t/p/w300//cq6wvDqETqJXgpQplkL0FBw2leM.jpg"
+      />
+    </aside>
+    <article
+      class="content"
     >
-      <p
-        class="MuiTypography-root-1 MuiTypography-body1-10"
+      <div
+        class="pointer-hover"
+        style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start;"
       >
-        After losing her job and learning that her husband has been unfaithful, a woman hits the road with her profane, hard-drinking grandmother.
-      </p>
-    </div>
-    <hr
-      class="MuiDivider-root-37"
-    />
-    <div
-      class="content-row-2"
-    >
-      <ul
-        class="MuiGridList-root-42"
-        style="margin: -2px; display: flex; flex-direction: row; flex-wrap: nowrap; transform: translateZ(0);"
-      >
-        <div
-          style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root-1"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
         >
-          <a
-            href="/person/55536"
-          >
-            <div
-              class="MuiAvatar-root-43 MuiAvatar-colorDefault-44"
-              style="width: 80px; height: 80px; margin: 10px;"
-            />
-          </a>
-          <p
-            class="MuiTypography-root-1 MuiTypography-body1-10 MuiTypography-alignCenter-24"
-          >
-            Melissa McCarthy
-          </p>
-          <span
-            class="MuiTypography-root-1 MuiTypography-caption-11 MuiTypography-alignCenter-24"
-          >
-            Tammy
-          </span>
-        </div>
-      </ul>
-    </div>
-    <hr
-      class="MuiDivider-root-37"
-    />
-  </article>
-  <footer
-    class="footer"
-  >
-    <h1>
-      Recommendations
-    </h1>
-    <div
-      style="display: flex; flex-wrap: wrap; justify-content: space-between; overflow: hidden;"
-    >
-      <ul
-        class="MuiGridList-root-42"
-        style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0);"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+          />
+        </svg>
+        <h1
+          class="bold-header-uppercase"
+        >
+          Tammy
+           [
+          2014
+          ]
+        </h1>
+      </div>
+      <div
+        class="content-row-1"
       >
-        <li
-          class="MuiGridListTile-root-46 pointer-hover"
-          style="padding: 5px;"
+        <h1>
+          She hit the road. The road hit back.
+        </h1>
+        <p
+          class="MuiTypography-root-10 MuiTypography-body1-19"
+        >
+          After losing her job and learning that her husband has been unfaithful, a woman hits the road with her profane, hard-drinking grandmother.
+        </p>
+      </div>
+      <hr
+        class="MuiDivider-root-46"
+      />
+      <div
+        class="content-row-2"
+      >
+        <ul
+          class="MuiGridList-root-51"
+          style="margin: -2px; display: flex; flex-direction: row; flex-wrap: nowrap; transform: translateZ(0); overflow-y: hidden;"
         >
           <div
-            class="MuiGridListTile-tile-47"
+            style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
           >
-            <img
-              alt="The Heat"
-              style="height: 225px;"
-            />
-            <div
-              class="MuiGridListTileBar-root-50 MuiGridListTileBar-titlePositionBottom-51"
+            <a
+              href="/person/55536"
             >
               <div
-                class="MuiGridListTileBar-titleWrap-54 MuiGridListTileBar-titleWrapActionPosRight-56"
+                class="MuiAvatar-root-52 avatar"
+                style="width: 80px; height: 80px; margin: 10px;"
+              >
+                <img
+                  alt="Melissa McCarthy"
+                  class="MuiAvatar-img-54"
+                  src="http://image.tmdb.org/t/p/w300//nRNMJlqR33j84cGdB0RxstV3NYm.jpg"
+                />
+              </div>
+            </a>
+            <p
+              class="MuiTypography-root-10 MuiTypography-body1-19 MuiTypography-alignCenter-33"
+            >
+              Melissa McCarthy
+            </p>
+            <span
+              class="MuiTypography-root-10 MuiTypography-caption-20 MuiTypography-alignCenter-33"
+            >
+              Tammy
+            </span>
+          </div>
+        </ul>
+      </div>
+      <hr
+        class="MuiDivider-root-46"
+      />
+    </article>
+    <footer
+      class="footer"
+    >
+      <h1>
+        Recommendations
+      </h1>
+      <div
+        style="display: flex; flex-wrap: wrap; justify-content: space-between; overflow: hidden;"
+      >
+        <ul
+          class="MuiGridList-root-51"
+          data-testid="asset-grid"
+          style="margin: -2px; flex-wrap: nowrap; transform: translateZ(0); padding-top: 3px; padding-bottom: 3px;"
+        >
+          <div
+            class="MuiGridListTile-root-55 pointer-hover image-tile"
+            data-testid="136795_The Heat"
+            style="padding: 5px; height: 225px; width: 150px;"
+          >
+            <div
+              class="MuiGridListTile-tile-56"
+            >
+              <img
+                alt="The Heat"
+                src="http://image.tmdb.org/t/p/w300//tM3hDt8JcU8Y8i6vzTcbnocM2bx.jpg"
+              />
+              <div
+                class="MuiGridListTileBar-root-59 MuiGridListTileBar-titlePositionBottom-60"
               >
                 <div
-                  class="MuiGridListTileBar-title-57"
+                  class="MuiGridListTileBar-titleWrap-63"
                 >
-                  The Heat
-                </div>
-              </div>
-              <div
-                class="MuiGridListTileBar-actionIcon-59"
-              >
-                <button
-                  class="MuiButtonBase-root-67 MuiIconButton-root-61"
-                  tabindex="0"
-                  type="button"
-                >
-                  <span
-                    class="MuiIconButton-label-66"
+                  <div
+                    class="MuiGridListTileBar-title-66"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root-70"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root-79"
-                  />
-                </button>
+                    The Heat
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
-    </div>
-  </footer>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </div>
 `;
+
+exports[`Movie Detail tests Renders a movie detail component 2`] = `
+<div>
+  <div>
+    Error
+  </div>
+</div>
+`;
+
+exports[`Movie Detail tests Renders a movie detail component 3`] = `<div />`;
+
+exports[`Movie Detail tests Renders a movie detail loadiing component 1`] = `<div />`;

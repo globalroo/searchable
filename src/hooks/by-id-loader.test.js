@@ -10,7 +10,7 @@ const mockLoadedData = {
 
 // Exercise the hook by ensuring a Fake component is populated as expected
 export const HookTestingComponent = ({ id, fetcher }) => {
-	const { loading, error, response } = useByIdLoader({ id, fetcher });
+	const { response } = useByIdLoader({ id, fetcher });
 	return <div>{JSON.stringify(response)}</div>;
 };
 
