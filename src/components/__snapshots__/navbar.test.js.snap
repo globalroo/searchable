@@ -10,8 +10,7 @@ exports[`Asset Tile tests Renders a component with a navigate back wrapper 1`] =
       class="MuiToolbar-root-37 MuiToolbar-regular-39 MuiToolbar-gutters-38"
     >
       <a
-        aria-current="page"
-        href="/"
+        href="/searchable/"
         style="color: white; text-decoration: none;"
       >
         <div
