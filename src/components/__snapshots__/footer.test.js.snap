@@ -10,35 +10,35 @@ exports[`Asset Tile tests Renders the example Footer with some test links 1`] = 
     </h5>
     <hr />
     <a
-      href="/searchable/movie/299536"
+      href="/movie/299536"
     >
       Deep link Movie
     </a>
      |
      
     <a
-      href="/searchable/person/60073"
+      href="/person/60073"
     >
       Deep link Alive Actor
     </a>
      |
      
     <a
-      href="/searchable/person/194"
+      href="/person/194"
     >
       Deep link Deceased Actor
     </a>
      |
      
     <a
-      href="/searchable/tv/1399"
+      href="/tv/1399}"
     >
       Deep link TV
     </a>
      |
      
     <a
-      href="/searchable/genres"
+      href="/genres"
     >
       Most popular movies by Genre
     </a>

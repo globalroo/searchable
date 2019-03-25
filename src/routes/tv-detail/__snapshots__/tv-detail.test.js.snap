@@ -222,7 +222,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1223786"
+            href="/person/1223786"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -250,7 +250,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/239019"
+            href="/person/239019"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -278,7 +278,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/22970"
+            href="/person/22970"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -306,7 +306,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/17286"
+            href="/person/17286"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -334,7 +334,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/12795"
+            href="/person/12795"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -362,7 +362,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1001657"
+            href="/person/1001657"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -390,7 +390,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1181313"
+            href="/person/1181313"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -418,7 +418,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/20508"
+            href="/person/20508"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -446,7 +446,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/15498"
+            href="/person/15498"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -474,7 +474,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1010135"
+            href="/person/1010135"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -502,7 +502,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/84423"
+            href="/person/84423"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -530,7 +530,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1011904"
+            href="/person/1011904"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -558,7 +558,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/239020"
+            href="/person/239020"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -586,7 +586,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1251069"
+            href="/person/1251069"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -614,7 +614,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/964792"
+            href="/person/964792"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -642,7 +642,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/195930"
+            href="/person/195930"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -670,7 +670,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/3075"
+            href="/person/3075"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -698,7 +698,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/213395"
+            href="/person/213395"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -726,7 +726,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/72315"
+            href="/person/72315"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -754,7 +754,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1034702"
+            href="/person/1034702"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -782,7 +782,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/570296"
+            href="/person/570296"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -810,7 +810,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/23229"
+            href="/person/23229"
           >
             <div
               class="MuiAvatar-root-26 avatar"
@@ -838,7 +838,7 @@ exports[`TV Detail tests Renders a TV detail component 1`] = `
           style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
         >
           <a
-            href="/searchable/person/1369307"
+            href="/person/1369307"
           >
             <div
               class="MuiAvatar-root-26 avatar"

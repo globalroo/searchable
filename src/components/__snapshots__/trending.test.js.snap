@@ -109,7 +109,7 @@ exports[`Trending component Renders as expected Renders a component with a navig
       style="width: 50%; height: 184px; padding: 2px; display: flex; flex-direction: column; align-items: center;"
     >
       <a
-        href="/searchable/person/2"
+        href="/person/2"
       >
         <div
           class="MuiAvatar-root-7 avatar"

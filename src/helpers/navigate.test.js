@@ -16,21 +16,17 @@ describe("Navigation tests", () => {
 	afterAll(restoreConsole);
 	it("Should navigate to the person endpoint when a person asset is received", () => {
 		navigateTo(mockPersonItem);
-		expect(mockNavigate).toHaveBeenCalledWith(
-			`/searchable/${MEDIA_TYPE.PERSON}/${mockPersonItem.id}`
-		);
+		expect(mockNavigate).toHaveBeenCalledWith(`/${MEDIA_TYPE.PERSON}/${mockPersonItem.id}`);
 		mockNavigate.mockReset();
 	});
 	it("Should navigate to the person endpoint when a tv asset is received", () => {
 		navigateTo(mockTvItem);
-		expect(mockNavigate).toHaveBeenCalledWith(`/searchable/${MEDIA_TYPE.TV}/${mockTvItem.id}`);
+		expect(mockNavigate).toHaveBeenCalledWith(`/${MEDIA_TYPE.TV}/${mockTvItem.id}`);
 		mockNavigate.mockReset();
 	});
 	it("Should navigate to the person endpoint when a movie asset is received", () => {
 		navigateTo(mockMovieItem);
-		expect(mockNavigate).toHaveBeenCalledWith(
-			`/searchable/${MEDIA_TYPE.MOVIE}/${mockMovieItem.id}`
-		);
+		expect(mockNavigate).toHaveBeenCalledWith(`/${MEDIA_TYPE.MOVIE}/${mockMovieItem.id}`);
 		mockNavigate.mockReset();
 	});
 	it("Should navigate to the person endpoint when a movie asset is received", () => {
