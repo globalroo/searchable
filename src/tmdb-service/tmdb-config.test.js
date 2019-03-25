@@ -13,6 +13,8 @@ import {
 	getSmallPosterImage,
 	getTrendingMoviesByDay,
 	getTrendingMoviesByWeek,
+	getTrendingTvByWeekEndpoint,
+	getTrendingPersonByWeekEndpoint,
 	getTvByIdEndpoint
 } from "./tmdb-config";
 
@@ -69,6 +71,14 @@ describe("Verify endpoints", () => {
 	});
 	it("Verify getTrendingMoviesByWeek returns expected URL", () => {
 		const endpoint = getTrendingMoviesByWeek();
+		expect(endpoint).toMatchSnapshot();
+	});
+	it("Verify getTrendingPersonByWeekEndpoint returns expected URL", () => {
+		const endpoint = getTrendingPersonByWeekEndpoint();
+		expect(endpoint).toMatchSnapshot();
+	});
+	it("Verify getTrendingTvByWeekEndpoint returns expected URL", () => {
+		const endpoint = getTrendingTvByWeekEndpoint();
 		expect(endpoint).toMatchSnapshot();
 	});
 	it("Formats the large image url correctly", () => {

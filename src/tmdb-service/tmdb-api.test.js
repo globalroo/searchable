@@ -13,6 +13,8 @@ import {
 	getSearchMultiResults,
 	getTvById,
 	getWeeklyTrendingMovies,
+	getWeeklyTrendingPeople,
+	getWeeklyTrendingTv,
 	safeFetchJson
 } from "./tmdb-api";
 
@@ -209,6 +211,24 @@ describe("Test TMDB API callouts via safeFetch", () => {
 			const [url] = request;
 			expect(url).toMatchInlineSnapshot(
 				`"https://api.themoviedb.org/3/discover/movie?api_key=test-key&myQuery=test&with_genres=1"`
+			);
+		});
+		it("getWeeklyTrendingPeople, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getWeeklyTrendingPeople();
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/trending/person/week?api_key=test-key"`
+			);
+		});
+		it("getWeeklyTrendingTv, calls out to the correct endpoint", async () => {
+			mockFetch.mockResponseOnce(JSON.stringify(testJsonResponse));
+			await getWeeklyTrendingTv();
+			const [request] = mockFetch.mock.calls;
+			const [url] = request;
+			expect(url).toMatchInlineSnapshot(
+				`"https://api.themoviedb.org/3/trending/tv/week?api_key=test-key"`
 			);
 		});
 	});
