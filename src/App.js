@@ -15,11 +15,11 @@ const App = () => {
 		<>
 			<NavBar title="TMDB Endpoints and Search" />
 			<Router>
-				<Home path={`${process.env.PUBLIC_URL}/`} />
-				<PersonDetail path={`${process.env.PUBLIC_URL}/person/:id`} />
-				<MovieDetail path={`${process.env.PUBLIC_URL}/movie/:id`} />
-				<TvDetail path={`${process.env.PUBLIC_URL}/tv/:id`} />
-				<PopularMoviesByGenre path={`${process.env.PUBLIC_URL}/genres`} />
+				<Home path="/" />
+				<PersonDetail path="/person/:id" />
+				<MovieDetail path="/movie/:id" />
+				<TvDetail path="/tv/:id" />
+				<PopularMoviesByGenre path="/genres" />
 			</Router>
 		</>
 	);

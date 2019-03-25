@@ -31,7 +31,7 @@ exports[`Asset Tile tests Renders the example Footer with some test links 1`] = 
      |
      
     <a
-      href="/tv/1399}"
+      href="/tv/1399"
     >
       Deep link TV
     </a>

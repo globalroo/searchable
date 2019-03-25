@@ -20,7 +20,7 @@ export const NavBar = ({ title }) => {
 	return (
 		<AppBar position="static" style={styles.appBarHeader}>
 			<Toolbar>
-				<Link style={styles.titleLink} to={`${process.env.PUBLIC_URL}/`}>
+				<Link style={styles.titleLink} to={`/`}>
 					<div style={styles.titleContainer}>
 						<Home />
 						&nbsp;
