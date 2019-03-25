@@ -14,7 +14,7 @@ yarn build (for a production version - generated to ./build)
 ```
 ## Brief description
 
-An Application that interfaces with TheMovieDB API and allows search for Actors, Actresses, and Movies and allows you to view the results.
+An Application that interfaces with TheMovieDB API and allows search for Actors, Actresses, and Movies and allows you to view the results. It's responsive and should work on your mobile too.
 
 Checkout the example links at the bottom of the landing page.
 
