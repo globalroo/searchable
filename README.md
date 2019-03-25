@@ -18,9 +18,9 @@ An Application that interfaces with TheMovieDB API and allows search for Actors,
 
 Checkout the example links at the bottom of the landing page.
 
-Live demo: https://globalroo.github.io/searchable/
+### Live demo: https://globalroo.github.io/searchable/
 
 ![Screenshot](/screenshot.png)
 
-Video highlighting some functionality
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c_DcKPq6XZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Video highlighting some functionality
+https://www.youtube.com/embed/c_DcKPq6XZI
